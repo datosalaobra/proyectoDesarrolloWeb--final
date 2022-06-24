@@ -1,0 +1,383 @@
+@charset "UTF-8";
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: Custom;
+  src: url("RobotoFlex-VariableRegular"); }
+
+/*propiedades del body*/
+/*estilos para el contenedor principal*/
+.contenedorUno {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1fr 1.5fr 0.3fr;
+  gap: 0.5rem;
+  background-image: url(../img/slider4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: initial;
+  background-color: #ced0ce;
+  grid-template-areas: "header header header header" "seccionUnificada seccionUnificada seccionUnificada seccionUnificada" "seccionCuatro main main main" "footer footer footer footer"; }
+
+.contenedorDos {
+  height: 350vh;
+  background-color: #ced0ce; }
+
+/*propieades del header*/
+header {
+  position: fixed;
+  width: 100%;
+  grid-area: header;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #bb0a21;
+  background-image: linear-gradient(300deg, #bb0a21 0%, #ced0ce 50%, #e6e8e6 100%);
+  border-top: 0.3rem solid #A9010D;
+  border-bottom: 0.1rem solid #f7f7ff;
+  z-index: 2; }
+  header nav .isologotipo {
+    display: inline-flex;
+    background-color: #A9010D;
+    box-shadow: 4px 5px #3c0105;
+    margin-right: 8rem;
+    margin-left: 0.5rem;
+    align-items: center; }
+  header .isologotipo:hover {
+    opacity: 0.7;
+    transform: scale(0.9); }
+  header nav ul {
+    display: flex;
+    justify-self: end;
+    align-self: end; }
+    header nav ul li {
+      padding-right: 3.125rem;
+      list-style: none;
+      /* pseudoclase hover para los botones */ }
+      header nav ul li a {
+        color: #031927;
+        text-decoration: none;
+        font-size: 1.3rem;
+        font-weight: bold; }
+      header nav ul li a:hover {
+        color: #A9010D; }
+
+/* atributos para indicarle al usuario donde se encuentra*/
+.home {
+  animation-name: escalar;
+  animation-iteration-count: infinite;
+  animation-duration: 4s; }
+
+.alquileres {
+  animation-name: escalar;
+  animation-iteration-count: infinite;
+  animation-duration: 4s; }
+
+.sobreNosotras {
+  animation-name: escalar;
+  animation-iteration-count: infinite;
+  animation-duration: 4s; }
+
+.ventas {
+  animation-name: escalar;
+  animation-iteration-count: infinite;
+  animation-duration: 4s; }
+
+.contacto {
+  animation-name: escalar;
+  animation-iteration-count: infinite;
+  animation-duration: 4s; }
+
+/* propiedades para que el usuario interprete a los botones principales*/
+.seccionUno:hover {
+  transform: scale(0.9); }
+
+.seccionDos:hover {
+  transform: scale(0.9); }
+
+.seccionTres:hover {
+  transform: scale(0.9); }
+
+/*propiedades del main*/
+main {
+  grid-area: main; }
+  main p {
+    margin-top: 2rem;
+    margin-left: 0.3rem;
+    display: flex;
+    width: 82%;
+    justify-content: center;
+    font-size: 2.4rem;
+    background-color: #A9010D;
+    border-bottom: 0.5rem solid #031927;
+    color: #f7f7ff; }
+  main .publicacionUno, main .publicacionDos, main .publicacionTres, main .publicacionCuatro, main .publicacionCinco, main .publicacionSeis {
+    display: inline-block;
+    margin: 5rem 3rem;
+    box-shadow: 4px 5px #031927; }
+  main .card-body {
+    height: 28rem;
+    background-image: linear-gradient(300deg, #bb0a21 0%, #ced0ce 50%, #e6e8e6 100%);
+    padding: 1rem; }
+    main .card-body .card-title {
+      font-size: 1rem; }
+    main .card-body .card-text {
+      font-size: 1rem;
+      width: 16rem;
+      height: 14rem; }
+    main .card-body .btn {
+      background-color: #f7f7ff;
+      color: #031927;
+      border-top: 0.3rem solid #A9010D;
+      border-bottom: 0.5rem solid #031927;
+      font-weight: bold;
+      margin-top: 2rem;
+      margin-left: 8rem; }
+    main .card-body .btn:hover {
+      transform: scale(0.9);
+      color: #A9010D; }
+  main .formulario {
+    position: fixed;
+    width: 22rem;
+    top: 30%;
+    left: 35%;
+    border: outset;
+    border-top: 0.3rem solid #bb0a21;
+    border-left: 0.3rem solid #ced0ce;
+    background-color: #f7f7ff;
+    padding: 0.3rem;
+    margin: 0.625rem;
+    opacity: 0.95; }
+
+/*propiedades de la section*/
+.seccionUnificada {
+  grid-area: seccionUnificada;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; }
+  .seccionUnificada .seccionUno, .seccionUnificada .seccionDos, .seccionUnificada .seccionTres {
+    border-top: 0.3rem solid #A9010D;
+    border-bottom: 0.5rem solid #031927;
+    border-radius: 10%;
+    overflow: hidden;
+    background-color: #f7f7ff;
+    font-size: 1.5rem;
+    padding: 0.1rem;
+    margin-top: 5rem;
+    margin-right: 0.4rem;
+    font-weight: bold;
+    text-align: center; }
+  .seccionUnificada a {
+    text-decoration: none;
+    color: #031927; }
+  .seccionUnificada a:hover {
+    color: #bb0a21; }
+
+.seccionCuatro {
+  grid-area: seccionCuatro;
+  margin-top: 8rem;
+  margin-left: 1rem;
+  text-align: center;
+  color: #031927; }
+  .seccionCuatro .logoCucicba {
+    justify-self: center;
+    align-self: center; }
+  .seccionCuatro .matricula {
+    background-color: #ced0ce;
+    opacity: 0.9; }
+
+.seccionPages {
+  margin-left: 2%;
+  margin-top: 10%;
+  padding-inline: 1rem;
+  text-align: center; }
+
+.botonWhatsapp {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  color: #031927;
+  display: inline;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 0.5rem;
+  text-decoration: none;
+  margin: 0.3rem 0.125rem;
+  border-radius: 50%;
+  z-index: 2; }
+  .botonWhatsapp .iconoWhatsapp {
+    animation-name: Escribinos;
+    animation-iteration-count: infinite;
+    animation-duration: 2s; }
+
+.botonWhatsapp:hover {
+  opacity: 0.7;
+  transform: scale(0.9); }
+
+/*propiedades del footer*/
+footer {
+  grid-area: footer;
+  position: fixed;
+  color: #031927;
+  background-color: #ced0ce;
+  opacity: 0.7;
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center; }
+
+/* animaciones*/
+@keyframes escalar {
+  0% {
+    transform: scale(1); }
+  20% {
+    transform: scale(1.2); }
+  40% {
+    transform: scale(1); } }
+
+@keyframes Escribinos {
+  0% {
+    transform: rotateZ(0deg); }
+  25% {
+    transform: rotateZ(-10deg) scale(1.1); }
+  50% {
+    transform: rotateZ(10deg) scale(0.9); }
+  100% {
+    transform: rotateZ(0deg); } }
+
+/*propiedades Media queries*/
+/*adaptación Tablet*/
+@media screen and (max-width: 1024px) {
+  .contenedorUno {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 0.3fr;
+    grid-template-areas: "header header header" "seccionUnificada seccionUnificada seccionUnificada" "seccionCuatro main main" "footer footer footer"; }
+  .contenedorDos {
+    height: 425vh;
+    background-color: #ced0ce; }
+  header nav ul li {
+    padding-right: 1rem; }
+    header nav ul li a {
+      font-size: 1.2rem; }
+  main p {
+    font-size: 1.5rem;
+    margin-top: 0.3rem; }
+  .consultas {
+    display: none; }
+  .escribinos {
+    color: #031927;
+    background-color: #ced0ce;
+    font-size: 1rem; }
+  .logo {
+    display: none; }
+  .logoCucicba {
+    display: none; }
+  .formulario {
+    top: 38%;
+    left: 20%; } }
+
+/* adaptación a mobile */
+@media screen and (max-width: 600px) {
+  .contenedorUno {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 0.3fr;
+    gap: 1rem;
+    place-content: space-between;
+    grid-template-areas: "header header header" "main main main" "seccionUnificada seccionUnificada seccionUnificada" "footer footer footer"; }
+  .contenedorDos {
+    height: auto;
+    background-color: #ced0ce; }
+  header {
+    justify-content: start; }
+    header nav ul li {
+      font-size: 0.5rem; }
+  .navbar-toggler {
+    background-color: #A9010D;
+    border-color: #f7f7ff; }
+  main p {
+    margin-top: 6rem;
+    width: 20rem;
+    margin-left: 1.5rem;
+    text-align: center; }
+  .publicacionUno {
+    margin-bottom: 1rem; }
+  .publicacionDos {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem; }
+  .publicacionTres {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+  .publicacionCuatro {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem; }
+  .publicacionCinco {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem; }
+  .publicacionSeis {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem; }
+  main .card-body .card-text {
+    height: 16rem;
+    width: 16rem;
+    font-size: 1rem;
+    margin: 2rem 0 0 0; }
+  .botonWhatsapp {
+    right: 10%;
+    bottom: 10%; }
+  .consultas {
+    display: none; }
+  .escribinos {
+    display: none; }
+  .seccionUnificada {
+    display: inline-block;
+    justify-self: start; }
+    .seccionUnificada .seccionUno {
+      width: 11rem;
+      margin-top: 1rem;
+      margin-left: 0.4rem;
+      font-size: 1.3rem; }
+    .seccionUnificada .seccionDos {
+      width: 11rem;
+      margin-top: 1rem;
+      margin-left: 0.4rem;
+      font-size: 1.3rem; }
+    .seccionUnificada .seccionTres {
+      width: 11rem;
+      margin-top: 1rem;
+      margin-left: 0.4rem;
+      font-size: 1.3rem; }
+  main .formulario {
+    width: 15rem;
+    left: 15%;
+    top: 20%; }
+  footer {
+    font-size: .7rem; } }
+
+/* adaptación a mobile x-samll */
+@media screen and (max-width: 375px) {
+  .contenedorUno {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 0.3fr;
+    gap: 1rem;
+    grid-template-areas: "header header" "main main" "seccionUnificada seccionUnificada" "footer footer"; }
+  header nav ul li {
+    margin-top: 1rem; }
+  header nav ul li a {
+    font-size: 1rem; }
+  main p {
+    display: block;
+    width: 18rem;
+    font-size: 1.3rem; }
+  main .publicacionUno, main .publicacionDos, main .publicacionTres, main .publicacionCuatro, main .publicacionCinco, main .publicacionSeis {
+    display: inline-block;
+    margin: 5rem 1rem;
+    box-shadow: 4px 5px #031927; }
+  footer {
+    font-size: 0.7rem; } }

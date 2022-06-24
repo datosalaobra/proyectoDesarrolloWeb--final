@@ -1,0 +1,10 @@
+@mixin contraste {
+    color: $color-text-dark;
+    background-color: $color-background;
+    opacity: 0.7;    
+}
+@mixin animaciones {
+    animation-name: escalar;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;    
+}
