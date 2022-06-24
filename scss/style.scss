@@ -28,8 +28,8 @@
     background-color: $color-background;
     grid-template-areas: "header header header header"
                         "seccionUnificada seccionUnificada seccionUnificada seccionUnificada"
-                        "seccionCuatro main main main"
-                        "footer footer footer footer";
+                        "main main main main"
+                        "seccionCuatro footer footer footer";
 }
 .contenedorDos{
     height: 350vh;
@@ -113,10 +113,11 @@ main{
     grid-area: main;
     p{
         margin-top: 2rem;
-        margin-left: 0.3rem;
+        margin-left: 12rem;
         display: flex;
-        width: 82%;
+        width: 70%;
         justify-content: center;
+        text-align: center;
         font-size: 2.4rem;
         background-color: $color-principal;
         border-bottom: 0.5rem solid $color-text-dark;
@@ -223,7 +224,7 @@ main{
 }
 .seccionCuatro{
     grid-area: seccionCuatro;
-    margin-top: 8rem;
+    margin-bottom: 3rem;
     margin-left: 1rem;
     text-align: center;
     color: $color-text-dark;
@@ -311,7 +312,7 @@ footer{
         grid-template-rows: 0.3fr 1fr 1fr 0.3fr;
         grid-template-areas: "header header header"
                             "seccionUnificada seccionUnificada seccionUnificada"
-                            "seccionCuatro main main"
+                            "main main main"
                             "footer footer footer";
     }
     .contenedorDos{
@@ -325,15 +326,14 @@ footer{
         }
     }
     main p{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         margin-top: 0.3rem;
     }
     .consultas{
         display: none;
     }
     .escribinos{
-        color: $color-text-dark;
-        background-color: $color-background;
+        color: $color-text;
         font-size: 1rem;
     }
     .logo{
@@ -350,6 +350,7 @@ footer{
 /* adaptación a mobile */
 @media screen and (max-width:600px){
     .contenedorUno{
+        background-size: cover;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 0.3fr 1fr 1fr 0.3fr;
         gap: 1rem;
@@ -375,7 +376,7 @@ footer{
     }
     main p{
         margin-top: 6rem ;
-        width: 20rem;
+        width: 100%;
         margin-left: 1.5rem;
         text-align: center;
     }
@@ -469,7 +470,6 @@ footer{
 
     main p{
         display: block;
-        width: 18rem;
         font-size: 1.3rem;
     }
     %cards {
