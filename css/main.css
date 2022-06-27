@@ -29,7 +29,7 @@
   background-color: #ced0ce; }
 
 .contenedorNosotras {
-  height: 250vh;
+  height: 230vh;
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr;
   grid-template-rows: 0.3fr 2fr 1fr 0.3fr;
@@ -155,16 +155,33 @@ main {
       color: #A9010D; }
   main .info {
     grid-area: main;
+    display: flex;
     width: 75%;
-    margin-top: 5%;
     margin-left: 15%;
-    padding: 0.5rem;
+    padding: 1rem;
     border: outset;
     border-top: 0.3rem solid #bb0a21;
     border-left: 0.3rem solid #031927;
     background-color: #A9010D;
-    color: #f7f7ff;
-    text-align: justify; }
+    color: #f7f7ff; }
+    main .info .quienesSomos {
+      display: inline-block;
+      text-align: justify; }
+      main .info .quienesSomos p {
+        text-decoration: none; }
+      main .info .quienesSomos p h1 {
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: center; }
+      main .info .quienesSomos p h2 {
+        font-weight: bold;
+        font-size: 1rem; }
+      main .info .quienesSomos p h3 {
+        font-weight: bold;
+        font-size: 1rem; }
+    main .info .video {
+      margin-left: 1rem;
+      margin-top: 7rem; }
   main .formulario {
     position: fixed;
     width: 22rem;
@@ -237,7 +254,7 @@ main {
 .botonWhatsapp {
   position: fixed;
   bottom: 3%;
-  right: 3%;
+  right: 1%;
   color: #031927;
   display: inline;
   font-size: 1.2rem;
@@ -331,6 +348,8 @@ footer {
   .contenedorDos {
     height: auto;
     background-color: #ced0ce; }
+  .contenedorNosotras {
+    height: 380vh; }
   header {
     justify-content: start; }
     header nav ul li {
@@ -343,6 +362,15 @@ footer {
     width: 100%;
     margin-left: 1.5rem;
     text-align: center; }
+  .info {
+    margin-top: 10%; }
+    .info .quienesSomos {
+      text-align: justify; }
+      .info .quienesSomos p {
+        border: none;
+        margin: 0; }
+  .video {
+    display: none; }
   .publicacionUno {
     margin-bottom: 1rem; }
   .publicacionDos {

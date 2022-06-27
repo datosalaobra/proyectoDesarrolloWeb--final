@@ -36,7 +36,7 @@
     background-color: $color-background;
 }
 .contenedorNosotras{
-    height: 250vh;
+    height: 230vh;
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr;
     grid-template-rows: 0.3fr 2fr 1fr 0.3fr;
@@ -188,17 +188,40 @@ main{
     }
     .info{
         grid-area: main;
-        // display: flex;
+        display: flex;
         width: 75%;
-        margin-top: 5%;
         margin-left: 15%;
-        padding: 0.5rem;
+        padding: 1rem;
         border: outset;
         border-top: 0.3rem solid $gradiente-color-principal;
         border-left: 0.3rem solid $color-text-dark;
         background-color: $color-principal;
         color: $color-text;
-        text-align: justify;
+        .quienesSomos{
+            display: inline-block;
+            text-align: justify;
+            p{
+                text-decoration: none;
+            }
+            p h1{
+                font-weight: bold;
+                font-size: 1rem;
+                text-align: center; 
+            }
+            p h2{
+                font-weight: bold;
+                font-size: 1rem;
+            }
+            p h3{
+                font-weight: bold;
+                font-size: 1rem;
+            }
+        }
+        .video{
+            margin-left: 1rem;
+            margin-top: 7rem;
+        }
+        
     }
     .formulario{
         position: fixed;
@@ -289,7 +312,7 @@ main{
 .botonWhatsapp{
     position: fixed;
     bottom: 3%;
-    right: 3%;
+    right: 1%;
     color: $color-text-dark;
     display: inline;
     font-size: 1.2rem;
@@ -407,6 +430,9 @@ footer{
         height: auto;
         background-color: $color-background;
     }
+    .contenedorNosotras{
+        height: 380vh;
+    }
     header{
             justify-content: start;
         nav ul li{
@@ -422,6 +448,20 @@ footer{
         width: 100%;
         margin-left: 1.5rem;
         text-align: center;
+    }
+    .info{
+        margin-top: 10%;
+        .quienesSomos{
+            text-align: justify;
+            p{
+                border: none;
+                margin: 0;
+            }
+        }   
+    } 
+    
+    .video{
+        display: none;
     }
     .publicacionUno{
         margin-bottom: 1rem;
