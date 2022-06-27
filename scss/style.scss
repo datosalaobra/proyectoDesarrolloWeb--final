@@ -36,7 +36,7 @@
     background-color: $color-background;
 }
 .contenedorNosotras{
-    height: 230vh;
+    height: 300vh;
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr;
     grid-template-rows: 0.3fr 2fr 1fr 0.3fr;
@@ -190,6 +190,7 @@ main{
         grid-area: main;
         display: flex;
         width: 75%;
+        margin-top: 5%;
         margin-left: 15%;
         padding: 1rem;
         border: outset;
@@ -221,7 +222,6 @@ main{
             margin-left: 1rem;
             margin-top: 7rem;
         }
-        
     }
     .formulario{
         position: fixed;
@@ -370,7 +370,7 @@ footer{
         transform: rotateZ(0deg);
     }
 }
-/*propiedades Media queries*/
+/*propiedades media queries*/
 /*adaptación Tablet*/
 @media screen and (max-width:1024px){
     .contenedorUno{
@@ -411,6 +411,9 @@ footer{
     .formulario{
         top: 38%;
         left: 20%;
+    }
+    .video{
+        display: none;
     }
 }
 /* adaptación a mobile */
@@ -459,7 +462,6 @@ footer{
             }
         }   
     } 
-    
     .video{
         display: none;
     }
@@ -562,5 +564,8 @@ footer{
     }
     footer{
         font-size: 0.7rem;
+    }
+    .info{
+        margin-top: 20%;
     }
 }
