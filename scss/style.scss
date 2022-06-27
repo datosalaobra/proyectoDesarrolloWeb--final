@@ -186,8 +186,9 @@ main{
             color:$color-principal;
         }
     }
-    .nosotras{
+    .info{
         grid-area: main;
+        // display: flex;
         width: 75%;
         margin-top: 5%;
         margin-left: 15%;
