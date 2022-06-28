@@ -86,10 +86,16 @@ header{
                 text-decoration: none;
                 font-size: 1.3rem;
                 font-weight: bold;
+                background-image: linear-gradient(currentColor, currentColor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .3s;
             }
             /* pseudoclase hover para los botones */
-            a:hover{
-                color: $color-principal;
+            a:hover, a:focus{
+                color: $gradiente-color-principal;
+                background-size: 100% 2px
             }
         }
     }

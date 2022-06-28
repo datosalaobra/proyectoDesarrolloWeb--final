@@ -72,9 +72,15 @@ header {
         color: #031927;
         text-decoration: none;
         font-size: 1.3rem;
-        font-weight: bold; }
-      header nav ul li a:hover {
-        color: #A9010D; }
+        font-weight: bold;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s; }
+      header nav ul li a:hover, header nav ul li a:focus {
+        color: #bb0a21;
+        background-size: 100% 2px; }
 
 /* atributos para indicarle al usuario donde se encuentra*/
 .home {
