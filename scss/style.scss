@@ -178,6 +178,59 @@ main{
             width: 16rem;
             height: 14rem;
         }
+        .cta {
+            position: relative;
+            margin-top: 2rem;
+            padding: .75rem 1.125rem;
+            transition: all 0.2s ease;
+            border: none;
+            background: none;
+           }
+           .boton{
+            color: $color-text;
+            text-decoration: none;            
+           }
+          
+           .cta:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0; 
+            display: block;
+            border-radius: 50px;
+            background:$gradiente-color-principal;
+            width: 45px;
+            height: 45px;
+            transition: all 0.3s ease;
+           }
+           .cta span {
+            position: relative;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            color: $color-principal;
+           }
+           .cta svg {
+            position: relative;
+            top: 0;
+            margin-left: 0.5rem;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke: $color-principal;
+            stroke-width: 2;
+            transform: translateX(-5px);
+            transition: all 0.3s ease;
+           }
+           .cta:hover:before {
+            width: 100%;
+            background: $color-text-dark;
+           }
+           .cta:hover svg {
+            transform: translateX(0);
+           }
+           .cta:active {
+            transform: scale(0.95);
+           }
         .btn{
             background-color: $color-text;
             color: $color-text-dark;
@@ -186,10 +239,6 @@ main{
             font-weight: bold;
             margin-top: 2rem;
             margin-left: 8rem;
-        }
-        .btn:hover{
-            transform: scale(0.9);
-            color:$color-principal;
         }
     }
     .info{

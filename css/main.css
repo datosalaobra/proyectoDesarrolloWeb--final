@@ -148,6 +148,50 @@ main {
       font-size: 1rem;
       width: 16rem;
       height: 14rem; }
+    main .card-body .cta {
+      position: relative;
+      margin-top: 2rem;
+      padding: .75rem 1.125rem;
+      transition: all 0.2s ease;
+      border: none;
+      background: none; }
+    main .card-body .boton {
+      color: #f7f7ff;
+      text-decoration: none; }
+    main .card-body .cta:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      border-radius: 50px;
+      background: #bb0a21;
+      width: 45px;
+      height: 45px;
+      transition: all 0.3s ease; }
+    main .card-body .cta span {
+      position: relative;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: #A9010D; }
+    main .card-body .cta svg {
+      position: relative;
+      top: 0;
+      margin-left: 0.5rem;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke: #A9010D;
+      stroke-width: 2;
+      transform: translateX(-5px);
+      transition: all 0.3s ease; }
+    main .card-body .cta:hover:before {
+      width: 100%;
+      background: #031927; }
+    main .card-body .cta:hover svg {
+      transform: translateX(0); }
+    main .card-body .cta:active {
+      transform: scale(0.95); }
     main .card-body .btn {
       background-color: #f7f7ff;
       color: #031927;
@@ -156,9 +200,6 @@ main {
       font-weight: bold;
       margin-top: 2rem;
       margin-left: 8rem; }
-    main .card-body .btn:hover {
-      transform: scale(0.9);
-      color: #A9010D; }
   main .info {
     grid-area: main;
     display: flex;
