@@ -26,15 +26,22 @@
 <body>
     <div class="contenedorUno">
         <header>
-            <nav class="navbar navbar-expand-sm justify-content-center">    
-                <div class="container-fluid d-flex">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+            <nav class="navbar navbar-expand-xl">    
+                <div class="container-fluid">
                         <div class="isologotipo">
                             <a class="animate__animated animate__swing" href="index.html"><img src="img/logo1.jpg" alt="logoInmobiliaria"></a>
                         </div>
-                        <div class="collapse navbar-collapse justify-content-center align-items-center w-80" id="navbarNavAltMarkup">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
+                            <label for="check" class="bar">
+                                <input id="check" type="checkbox">
+                            
+                                <span class="top"></span>
+                                <span class="middle"></span>
+                                <span class="bottom"></span>
+                            </label>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-center align-items-center w-80" id="navbarBasic">
                             <ul class="navbar-nav mx-auto text-center">
                                 <div class="navbar-nav ml-auto">
                                     <li class="home"><a aria-current="page" href="index.html">Home</a></li>
@@ -43,7 +50,7 @@
                                     <li><a href="pages/ventas.html">Ventas</a></li>
                                     <li><a href="pages/contacto.html">Contáctanos</a></li>
                                 </div>
-                            </ul>
+                            </ul>                       
                         </div>
                     </div>
               </nav>             
@@ -54,15 +61,19 @@
         </main>
 
         <section class="seccionUnificada">
-            <div class="seccionUno">
-                <a href="pages/contacto.html">Quiero vender</a>
-            </div>
-            <div class="seccionDos">
+            
+            <button class="seccionUno">
+                <a href="pages/contacto.html"> Quiero vender</a>
+            </button>
+            
+            <button class="seccionDos">
                 <a href="pages/ventas.html">Quiero comprar</a>
-            </div>
-            <div class="seccionTres">
+            </button>
+
+            <button class="seccionTres">
                 <a href="pages/alquileres.html">Quiero alquilar</a>
-            </div>
+            </button>
+
         </section>
 
         <section class="seccionCuatro">
