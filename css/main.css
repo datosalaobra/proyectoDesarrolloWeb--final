@@ -25,7 +25,7 @@
   grid-template-areas: "header header header header" "seccionUnificada seccionUnificada seccionUnificada seccionUnificada" "main main main main" "seccionCuatro footer footer footer"; }
 
 .contenedorDos {
-  height: 350vh;
+  height: 300vh;
   background-color: #ced0ce; }
 
 .contenedorNosotras {
@@ -464,8 +464,12 @@ input[type]:checked ~ span.middle {
     grid-template-rows: 0.3fr 1fr 1fr 0.3fr;
     grid-template-areas: "header header header" "seccionUnificada seccionUnificada seccionUnificada" "main main main" "footer footer footer"; }
   .contenedorDos {
-    height: 380vh;
+    display: grid;
+    width: 100%;
+    height: 580vh;
     background-color: #ced0ce; }
+  header {
+    margin-bottom: 1rem; }
   header nav ul li {
     padding-right: .5rem; }
     header nav ul li a {
@@ -487,8 +491,6 @@ input[type]:checked ~ span.middle {
       padding: .625rem 1rem; }
     .seccionUnificada .seccionTres {
       padding: .625rem 1rem; }
-  .publicaciones {
-    margin-top: 5%; }
   .consultas {
     display: none; }
   .escribinos {
@@ -507,6 +509,7 @@ input[type]:checked ~ span.middle {
 /* adaptación a mobile */
 @media screen and (max-width: 600px) {
   .contenedorUno {
+    height: 100%;
     background-size: cover;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.3fr 1fr 1fr 0.3fr;
@@ -514,12 +517,14 @@ input[type]:checked ~ span.middle {
     place-content: space-between;
     grid-template-areas: "header header header" "main main main" "seccionUnificada seccionUnificada seccionUnificada" "footer footer footer"; }
   .contenedorDos {
+    display: grid;
+    height: 780vh;
     background-color: #ced0ce; }
   .contenedorNosotras {
     height: 380vh;
     gap: .5rem; }
   header {
-    margin-bottom: 1%; }
+    margin-bottom: 1rem; }
     header nav ul li {
       font-size: 0.5rem; }
   .navbar-toggler {
@@ -577,17 +582,17 @@ input[type]:checked ~ span.middle {
       padding: 5%;
       margin: 5%;
       font-size: 1rem;
-      width: 11rem; }
+      width: 12rem; }
     .seccionUnificada .seccionDos {
       padding: 5%;
       margin: 5%;
       font-size: 1rem;
-      width: 11rem; }
+      width: 12rem; }
     .seccionUnificada .seccionTres {
       padding: 5%;
       margin: 5%;
       font-size: 1rem;
-      width: 11rem; }
+      width: 12rem; }
   main .formulario {
     width: 15rem;
     left: 15%;
@@ -602,6 +607,9 @@ input[type]:checked ~ span.middle {
     grid-template-rows: 0.3fr 1fr 1fr 0.3fr;
     gap: 2rem;
     grid-template-areas: "header header" "main main" "seccionUnificada seccionUnificada" "footer footer"; }
+  .contenedorDos {
+    height: 800vh;
+    display: grid; }
   header nav ul li {
     margin-top: 1rem; }
   header nav ul li a {
@@ -612,8 +620,6 @@ input[type]:checked ~ span.middle {
     display: block;
     font-size: 1rem; }
   .publicaciones .publicacionUno, .publicaciones .publicacionDos, .publicaciones .publicacionTres, .publicaciones .publicacionCuatro, .publicaciones .publicacionCinco, .publicaciones .publicacionSeis {
-    display: inline-block;
-    margin: 5rem 1rem;
     box-shadow: 4px 5px #031927; }
   footer {
     font-size: 0.7rem; }
