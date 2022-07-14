@@ -50,14 +50,11 @@ header {
   border-top: 0.3rem solid #A9010D;
   border-bottom: 0.1rem solid #f7f7ff;
   z-index: 2; }
-  header .navbar-toggler.collapsed {
-    margin-left: 4rem; }
   header nav .isologotipo {
     display: inline-flex;
     background-color: #A9010D;
     box-shadow: 4px 5px #3c0105;
-    margin-right: 8rem;
-    margin-left: 0.5rem;
+    margin-right: 1rem;
     align-items: center; }
   header .isologotipo:hover {
     opacity: 0.7;
@@ -110,16 +107,6 @@ header {
   animation-iteration-count: infinite;
   animation-duration: 4s; }
 
-/* propiedades para que el usuario interprete a los botones principales*/
-.seccionUno:hover {
-  transform: scale(0.9); }
-
-.seccionDos:hover {
-  transform: scale(0.9); }
-
-.seccionTres:hover {
-  transform: scale(0.9); }
-
 /*propiedades del main y de los principales objetos de las pages*/
 main {
   grid-area: main; }
@@ -137,13 +124,13 @@ main {
   main .publicacionUno, main .publicacionDos, main .publicacionTres, main .publicacionCuatro, main .publicacionCinco, main .publicacionSeis {
     display: inline-block;
     margin: 5rem 3rem;
-    box-shadow: 4px 5px #031927; }
+    box-shadow: 4px 5px #031927;
+    text-decoration: none; }
   main .card-body {
     height: 28rem;
     background-image: linear-gradient(300deg, #bb0a21 0%, #ced0ce 50%, #e6e8e6 100%);
     padding: 1rem;
-    text-align: center;
-    /* From uiverse.io */ }
+    text-align: center; }
     main .card-body .card-title {
       font-size: 1rem; }
     main .card-body .card-text {
@@ -160,7 +147,6 @@ main {
       outline: none;
       border: 0;
       vertical-align: middle;
-      text-decoration: none;
       background: transparent;
       padding: 0;
       font-size: inherit;
@@ -197,8 +183,8 @@ main {
       right: 0.0625rem;
       width: 0.625rem;
       height: 0.625rem;
-      border-top: 0.125rem solid #fff;
-      border-right: 0.125rem solid #fff;
+      border-top: 0.125rem solid #f7f7ff;
+      border-right: 0.125rem solid #f7f7ff;
       transform: rotate(45deg); }
     main .card-body button.contactanos .button-text {
       transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
@@ -209,7 +195,7 @@ main {
       bottom: 0;
       padding: 0.75rem 0;
       margin: 0 0 0 1.85rem;
-      color: #282936;
+      color: #031927;
       font-weight: 700;
       line-height: 1.6;
       text-align: center;
@@ -217,18 +203,10 @@ main {
     main .card-body button:hover .circle {
       width: 100%; }
     main .card-body button:hover .circle .icon.arrow {
-      background: #fff;
+      background: #f7f7ff;
       transform: translate(1rem, 0); }
     main .card-body button:hover .button-text {
-      color: #fff; }
-    main .card-body .btn {
-      background-color: #f7f7ff;
-      color: #031927;
-      border-top: 0.3rem solid #A9010D;
-      border-bottom: 0.5rem solid #031927;
-      font-weight: bold;
-      margin-top: 2rem;
-      margin-left: 8rem; }
+      color: #f7f7ff; }
   main .info {
     grid-area: main;
     display: flex;
@@ -259,6 +237,11 @@ main {
     main .info .video {
       margin-left: 1rem;
       margin-top: 7rem; }
+  main span a {
+    color: #f7f7ff;
+    text-decoration: none; }
+  main span a:hover {
+    color: #031927; }
   main .formulario {
     position: fixed;
     width: 22rem;
@@ -290,7 +273,8 @@ main {
   grid-area: seccionUnificada;
   display: flex;
   justify-content: center;
-  align-items: flex-start; }
+  align-items: flex-start;
+  /* propiedades para que el usuario interprete a los botones principales*/ }
   .seccionUnificada .seccionUno, .seccionUnificada .seccionDos, .seccionUnificada .seccionTres {
     position: relative;
     display: inline-block;
@@ -302,9 +286,10 @@ main {
     vertical-align: middle;
     text-decoration: none;
     font-family: inherit;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase;
+    color: #f7f7ff;
     padding: 1.25em 2em;
     background: #bb0a21;
     border: 2px solid #b18597;
@@ -313,6 +298,9 @@ main {
     transform-style: preserve-3d;
     -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
     transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1); }
+  .seccionUnificada a {
+    text-decoration: none;
+    color: #f7f7ff; }
   .seccionUnificada .seccionUno::before, .seccionUnificada .seccionDos::before, .seccionUnificada .seccionTres::before {
     position: absolute;
     content: '';
@@ -337,9 +325,6 @@ main {
     box-shadow: 0 0 0 2px #b18597;
     -webkit-transform: translate3d(0, 0.5em, -1em);
     transform: translate3d(0, 0.5em, -1em); }
-  .seccionUnificada a {
-    text-decoration: none;
-    color: #f7f7ff; }
 
 .seccionCuatro {
   grid-area: seccionCuatro;
@@ -500,7 +485,7 @@ input[type]:checked ~ span.middle {
     background-size: cover;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.3fr 1fr 1fr 0.3fr;
-    gap: 1rem;
+    gap: .5rem;
     place-content: space-between;
     grid-template-areas: "header header header" "main main main" "seccionUnificada seccionUnificada seccionUnificada" "footer footer footer"; }
   .contenedorDos {
@@ -516,27 +501,25 @@ input[type]:checked ~ span.middle {
     background-color: #A9010D;
     border-color: #f7f7ff; }
   main p {
-    margin-top: 4rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
     width: 100%;
     margin-left: 1.5rem;
     text-align: center; }
+  .seccionUnificada .seccionUno, .seccionUnificada .seccionDos, .seccionUnificada .seccionTres {
+    padding: 5%;
+    margin: 5%; }
   .seccionUnificada {
-    margin-bottom: 1rem; }
+    margin-left: 30%; }
   .seccionUno {
-    margin-bottom: 1rem; }
-    .seccionUno a {
-      font-size: .6rem;
-      margin-bottom: .5rem; }
-  .seccionDos {
-    margin-bottom: 1rem; }
-    .seccionDos a {
-      font-size: .6rem;
-      margin-bottom: 1rem; }
-  .seccionTres {
-    margin-bottom: 1rem; }
-    .seccionTres a {
-      font-size: .6rem;
-      margin-bottom: 1rem; }
+    margin-top: 1%;
+    width: 5rem; }
+    .seccionUno p {
+      font-size: .8rem; }
+  .seccionDos p {
+    font-size: .8rem; }
+  .seccionTres p {
+    font-size: .8rem; }
   .info {
     margin-top: 10%; }
     .info .quienesSomos {
@@ -569,7 +552,7 @@ input[type]:checked ~ span.middle {
     font-size: 1rem;
     margin: 2rem 0 0 0; }
   .botonWhatsapp {
-    right: 10%;
+    right: 5%;
     bottom: 10%; }
   .consultas {
     display: none; }

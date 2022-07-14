@@ -62,15 +62,11 @@ header{
     border-top: 0.3rem solid $color-principal;
     border-bottom: 0.1rem solid $color-text;
     z-index: 2;
-    .navbar-toggler.collapsed{
-        margin-left: 4rem;
-    }
     nav .isologotipo{
         display: inline-flex;
         background-color: $color-principal;
         box-shadow: 4px 5px $gradiente-dark-color-principal;
-        margin-right: 8rem;
-        margin-left: 0.5rem;
+        margin-right: 1rem;
         align-items: center;
     }
     .isologotipo:hover{
@@ -119,16 +115,7 @@ header{
 .contacto{
     @include animaciones;
 }
-/* propiedades para que el usuario interprete a los botones principales*/
-.seccionUno:hover{
-    transform: scale(0.9);
-}
-.seccionDos:hover{
-    transform: scale(0.9);
-}
-.seccionTres:hover{
-    transform: scale(0.9);
-}
+
 /*propiedades del main y de los principales objetos de las pages*/
 main{
     grid-area: main;
@@ -148,6 +135,7 @@ main{
         display: inline-block;
         margin: 5rem 3rem;
         box-shadow: 4px 5px $color-text-dark;
+        text-decoration: none;
     }
     .publicacionUno{
         @extend %cards;
@@ -181,8 +169,7 @@ main{
             width: 16rem;
             height: 14rem;
         }
-        /* From uiverse.io */
-button {
+    button {
     position: relative;
     margin-top: 2rem;
     margin-left: 4.5rem;
@@ -191,18 +178,15 @@ button {
     outline: none;
     border: 0;
     vertical-align: middle;
-    text-decoration: none;
     background: transparent;
     padding: 0;
     font-size: inherit;
     font-family: inherit;
-   }
-   
-   button.contactanos {
+   }   
+    button.contactanos {
     width: 12rem;
     height: auto;
    }
-   
    button.contactanos .circle {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: relative;
@@ -213,7 +197,6 @@ button {
     background: #A9010D;
     border-radius: 1.625rem;
    }
-   
    button.contactanos .circle .icon {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
@@ -222,7 +205,6 @@ button {
     margin: auto;
     background: #fff;
    }
-   
    button.contactanos .circle .icon.arrow {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     left: 0.625rem;
@@ -230,7 +212,6 @@ button {
     height: 0.125rem;
     background: none;
    }
-   
    button.contactanos .circle .icon.arrow::before {
     position: absolute;
     content: "";
@@ -238,11 +219,10 @@ button {
     right: 0.0625rem;
     width: 0.625rem;
     height: 0.625rem;
-    border-top: 0.125rem solid #fff;
-    border-right: 0.125rem solid #fff;
+    border-top: 0.125rem solid $color-text;
+    border-right: 0.125rem solid $color-text;
     transform: rotate(45deg);
    }
-   
    button.contactanos .button-text {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
@@ -252,35 +232,23 @@ button {
     bottom: 0;
     padding: 0.75rem 0;
     margin: 0 0 0 1.85rem;
-    color: #282936;
+    color: $color-text-dark;
     font-weight: 700;
     line-height: 1.6;
     text-align: center;
     text-transform: uppercase;
    }
-   
    button:hover .circle {
     width: 100%;
    }
-   
    button:hover .circle .icon.arrow {
-    background: #fff;
+    background: $color-text;
     transform: translate(1rem, 0);
    }
-   
    button:hover .button-text {
-    color: #fff;
+    color: $color-text;
    }
-        .btn{
-            background-color: $color-text;
-            color: $color-text-dark;
-            border-top: 0.3rem solid $color-principal;
-            border-bottom: 0.5rem solid $color-text-dark;
-            font-weight: bold;
-            margin-top: 2rem;
-            margin-left: 8rem;
-        }
-    }
+   }
     .info{
         grid-area: main;
         display: flex;
@@ -317,6 +285,13 @@ button {
             margin-left: 1rem;
             margin-top: 7rem;
         }
+    }
+    span a{
+        color: $color-text;
+        text-decoration: none;
+    }
+    span a:hover{
+        color: $color-text-dark;
     }
     .formulario{
         position: fixed;
@@ -364,9 +339,10 @@ button {
         vertical-align: middle;
         text-decoration: none;
         font-family: inherit;
-        font-size: 15px;
+        font-size: 1rem;
         font-weight: 600;
         text-transform: uppercase;
+        color: $color-text;
         padding: 1.25em 2em;
         background: $gradiente-color-principal;
         border: 2px solid $color-border;
@@ -375,33 +351,6 @@ button {
         transform-style: preserve-3d;
         -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
         transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
-    }
-    %botones::before{
-        position: absolute;
-        content: '';
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: $color-text-dark;
-        border-radius: inherit;
-        -webkit-box-shadow: 0 0 0 2px $color-border;
-        box-shadow: 0 0 0 2px $color-border;
-        -webkit-transform: translate3d(0, 0.75em, -1em);
-        transform: translate3d(0, 0.75em, -1em);
-        transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
-    }
-    %botones:hover{
-        -webkit-transform: translate(0, 0.25em);
-        transform: translate(0, 0.25em);
-    }
-    %botones:hover::before{
-        -webkit-box-shadow: 0 0 0 2px $color-border;
-        box-shadow: 0 0 0 2px $color-border;
-        -webkit-transform: translate3d(0, 0.5em, -1em);
-        transform: translate3d(0, 0.5em, -1em);
     }
     .seccionUno{
         @extend %botones;
@@ -416,6 +365,35 @@ button {
         text-decoration: none;
         color: $color-text;        
     }
+/* propiedades para que el usuario interprete a los botones principales*/
+%botones::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $color-text-dark;
+    border-radius: inherit;
+    -webkit-box-shadow: 0 0 0 2px $color-border;
+    box-shadow: 0 0 0 2px $color-border;
+    -webkit-transform: translate3d(0, 0.75em, -1em);
+    transform: translate3d(0, 0.75em, -1em);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+%botones:hover{
+    -webkit-transform: translate(0, 0.25em);
+    transform: translate(0, 0.25em);
+}
+    %botones:hover::before{
+        -webkit-box-shadow: 0 0 0 2px $color-border;
+        box-shadow: 0 0 0 2px $color-border;
+        -webkit-transform: translate3d(0, 0.5em, -1em);
+        transform: translate3d(0, 0.5em, -1em);
+    }
+
 }
 .seccionCuatro{
     grid-area: seccionCuatro;
@@ -606,7 +584,7 @@ input[type = "checkbox"] {
         background-size: cover;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 0.3fr 1fr 1fr 0.3fr;
-        gap: 1rem;
+        gap: .5rem;
         place-content: space-between;
         grid-template-areas: "header header header"
                             "main main main"
@@ -632,33 +610,34 @@ input[type = "checkbox"] {
     }
     
     main p{
-        margin-top: 4rem ;
+        margin-top: 5rem ;
+        margin-bottom: 1rem;
         width: 100%;
         margin-left: 1.5rem;
         text-align: center;
     }
+    .seccionUnificada .seccionUno, .seccionUnificada .seccionDos, .seccionUnificada .seccionTres{
+        padding: 5%;
+        margin: 5%;
+    }
     .seccionUnificada{
-        margin-bottom: 1rem;
+        margin-left: 30%;
     }
     .seccionUno{
-        margin-bottom: 1rem;
-        a{
-            font-size: .6rem;
-            margin-bottom: .5rem;
+        margin-top: 1%;
+        width: 5rem;
+        p {
+            font-size: .8rem;
         }
     }
     .seccionDos{
-        margin-bottom: 1rem;
-        a{
-            font-size: .6rem;
-            margin-bottom: 1rem;
+        p {
+            font-size: .8rem;
         }
     }
     .seccionTres{
-        margin-bottom: 1rem;
-        a{
-            font-size: .6rem;
-            margin-bottom: 1rem;
+        p {
+          font-size: .8rem;
         }
     }
     .info{
@@ -704,7 +683,7 @@ input[type = "checkbox"] {
         margin: 2rem 0 0 0;
     }
     .botonWhatsapp{
-        right: 10%;
+        right: 5%;
         bottom: 10%;
     }
     .consultas{
