@@ -466,7 +466,7 @@ input[type]:checked ~ span.middle {
   .contenedorDos {
     display: grid;
     width: 100%;
-    height: 580vh;
+    height: 100%;
     background-color: #ced0ce; }
   header {
     margin-bottom: 1rem; }
@@ -518,7 +518,7 @@ input[type]:checked ~ span.middle {
     grid-template-areas: "header header header" "main main main" "seccionUnificada seccionUnificada seccionUnificada" "footer footer footer"; }
   .contenedorDos {
     display: grid;
-    height: 780vh;
+    height: 100%;
     background-color: #ced0ce; }
   .contenedorNosotras {
     height: 380vh;
@@ -563,10 +563,10 @@ input[type]:checked ~ span.middle {
     margin-top: 1rem;
     margin-bottom: 0.5rem; }
   main .card-body .card-text {
+    justify-content: start;
     height: 16rem;
     width: 16rem;
-    font-size: 1rem;
-    margin: 2rem 0 0 0; }
+    font-size: 1rem; }
   .botonWhatsapp {
     right: 5%;
     bottom: 10%; }
@@ -593,6 +593,8 @@ input[type]:checked ~ span.middle {
       margin: 5%;
       font-size: 1rem;
       width: 12rem; }
+  .seccionPages {
+    display: none; }
   main .formulario {
     width: 15rem;
     left: 15%;
@@ -608,7 +610,7 @@ input[type]:checked ~ span.middle {
     gap: 2rem;
     grid-template-areas: "header header" "main main" "seccionUnificada seccionUnificada" "footer footer"; }
   .contenedorDos {
-    height: 800vh;
+    height: 100%;
     display: grid; }
   header nav ul li {
     margin-top: 1rem; }
@@ -619,8 +621,6 @@ input[type]:checked ~ span.middle {
   main p {
     display: block;
     font-size: 1rem; }
-  .publicaciones .publicacionUno, .publicaciones .publicacionDos, .publicaciones .publicacionTres, .publicaciones .publicacionCuatro, .publicaciones .publicacionCinco, .publicaciones .publicacionSeis {
-    box-shadow: 4px 5px #031927; }
   footer {
     font-size: 0.7rem; }
   .info {

@@ -550,7 +550,7 @@ input[type = "checkbox"] {
     .contenedorDos{
         display: grid;
         width: 100%;
-        height: 580vh;
+        height: 100%;
         background-color: $color-background;
     }
     header{
@@ -623,7 +623,7 @@ input[type = "checkbox"] {
     }
     .contenedorDos{
         display: grid;
-        height: 780vh;
+        height: 100%;
         background-color: $color-background;
     }
     .contenedorNosotras{
@@ -685,10 +685,10 @@ input[type = "checkbox"] {
         margin-bottom: 0.5rem;
     }
     main .card-body .card-text{
+        justify-content: start;
         height: 16rem;
         width: 16rem;
         font-size: 1rem;
-        margin: 2rem 0 0 0;
     }
     .botonWhatsapp{
         right: 5%;
@@ -723,6 +723,9 @@ input[type = "checkbox"] {
             width: 12rem;
         }
     }
+    .seccionPages{
+        display: none;
+    }
     main .formulario {
         width: 15rem;
         left: 15%;
@@ -744,7 +747,7 @@ input[type = "checkbox"] {
                             "footer footer";
     }
     .contenedorDos{
-        height: 800vh;
+        height: 100%;
         display: grid;
     }
     header nav ul li{
@@ -759,9 +762,6 @@ input[type = "checkbox"] {
     main p{
         display: block;
         font-size: 1rem;
-    }
-    %cards {
-        box-shadow: 4px 5px $color-text-dark;
     }
     footer{
         font-size: 0.7rem;
