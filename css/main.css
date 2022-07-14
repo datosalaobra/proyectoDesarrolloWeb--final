@@ -54,7 +54,7 @@ header {
     display: inline-flex;
     background-color: #A9010D;
     box-shadow: 4px 5px #3c0105;
-    margin-right: 1rem;
+    margin-right: 6rem;
     align-items: center; }
   header .isologotipo:hover {
     opacity: 0.7;
@@ -121,141 +121,150 @@ main {
     background-color: #A9010D;
     border-bottom: 0.5rem solid #031927;
     color: #f7f7ff; }
-  main .publicacionUno, main .publicacionDos, main .publicacionTres, main .publicacionCuatro, main .publicacionCinco, main .publicacionSeis {
+
+.publicaciones .publicacionUno, .publicaciones .publicacionDos, .publicaciones .publicacionTres, .publicaciones .publicacionCuatro, .publicaciones .publicacionCinco, .publicaciones .publicacionSeis {
+  display: inline-block;
+  margin: 5rem 3rem;
+  box-shadow: 4px 5px #031927;
+  text-decoration: none; }
+
+.publicaciones .card-body {
+  height: 28rem;
+  background-image: linear-gradient(300deg, #bb0a21 0%, #ced0ce 50%, #e6e8e6 100%);
+  padding: 1rem;
+  text-align: center; }
+  .publicaciones .card-body .card-title {
+    font-size: 1rem; }
+  .publicaciones .card-body .card-text {
+    margin: 0;
+    font-size: 1rem;
+    width: 16rem;
+    height: 14rem; }
+  .publicaciones .card-body button {
+    position: relative;
+    margin-top: 2rem;
+    margin-left: 4.5rem;
     display: inline-block;
-    margin: 5rem 3rem;
-    box-shadow: 4px 5px #031927;
-    text-decoration: none; }
-  main .card-body {
-    height: 28rem;
-    background-image: linear-gradient(300deg, #bb0a21 0%, #ced0ce 50%, #e6e8e6 100%);
-    padding: 1rem;
-    text-align: center; }
-    main .card-body .card-title {
-      font-size: 1rem; }
-    main .card-body .card-text {
-      margin: 0;
-      font-size: 1rem;
-      width: 16rem;
-      height: 14rem; }
-    main .card-body button {
-      position: relative;
-      margin-top: 2rem;
-      margin-left: 4.5rem;
-      display: inline-block;
-      cursor: pointer;
-      outline: none;
-      border: 0;
-      vertical-align: middle;
-      background: transparent;
-      padding: 0;
-      font-size: inherit;
-      font-family: inherit; }
-    main .card-body button.contactanos {
-      width: 12rem;
-      height: auto; }
-    main .card-body button.contactanos .circle {
-      transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-      position: relative;
-      display: block;
-      margin: 0;
-      width: 3rem;
-      height: 3rem;
-      background: #A9010D;
-      border-radius: 1.625rem; }
-    main .card-body button.contactanos .circle .icon {
-      transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-      background: #fff; }
-    main .card-body button.contactanos .circle .icon.arrow {
-      transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-      left: 0.625rem;
-      width: 1.125rem;
-      height: 0.125rem;
-      background: none; }
-    main .card-body button.contactanos .circle .icon.arrow::before {
-      position: absolute;
-      content: "";
-      top: -0.29rem;
-      right: 0.0625rem;
-      width: 0.625rem;
-      height: 0.625rem;
-      border-top: 0.125rem solid #f7f7ff;
-      border-right: 0.125rem solid #f7f7ff;
-      transform: rotate(45deg); }
-    main .card-body button.contactanos .button-text {
-      transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      padding: 0.75rem 0;
-      margin: 0 0 0 1.85rem;
-      color: #031927;
-      font-weight: 700;
-      line-height: 1.6;
-      text-align: center;
-      text-transform: uppercase; }
-    main .card-body button:hover .circle {
-      width: 100%; }
-    main .card-body button:hover .circle .icon.arrow {
-      background: #f7f7ff;
-      transform: translate(1rem, 0); }
-    main .card-body button:hover .button-text {
-      color: #f7f7ff; }
-  main .info {
-    grid-area: main;
-    display: flex;
-    width: 75%;
-    margin-top: 5%;
-    margin-left: 15%;
-    padding: 1rem;
-    border: outset;
-    border-top: 0.3rem solid #bb0a21;
-    border-left: 0.3rem solid #031927;
-    background-color: #A9010D;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit; }
+  .publicaciones .card-body button.contactanos {
+    width: 12rem;
+    height: auto; }
+  .publicaciones .card-body button.contactanos .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #A9010D;
+    border-radius: 1.625rem; }
+  .publicaciones .card-body button.contactanos .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff; }
+  .publicaciones .card-body button.contactanos .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none; }
+  .publicaciones .card-body button.contactanos .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #f7f7ff;
+    border-right: 0.125rem solid #f7f7ff;
+    transform: rotate(45deg); }
+  .publicaciones .card-body button.contactanos .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #031927;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase; }
+  .publicaciones .card-body button:hover .circle {
+    width: 100%; }
+  .publicaciones .card-body button:hover .circle .icon.arrow {
+    background: #f7f7ff;
+    transform: translate(1rem, 0); }
+  .publicaciones .card-body button:hover .button-text {
     color: #f7f7ff; }
-    main .info .quienesSomos {
-      display: inline-block;
-      text-align: justify; }
-      main .info .quienesSomos p {
-        text-decoration: none; }
-      main .info .quienesSomos p h1 {
-        font-weight: bold;
-        font-size: 1rem;
-        text-align: center; }
-      main .info .quienesSomos p h2 {
-        font-weight: bold;
-        font-size: 1rem; }
-      main .info .quienesSomos p h3 {
-        font-weight: bold;
-        font-size: 1rem; }
-    main .info .video {
-      margin-left: 1rem;
-      margin-top: 7rem; }
-  main span a {
-    color: #f7f7ff;
-    text-decoration: none; }
-  main span a:hover {
-    color: #031927; }
-  main .formulario {
-    position: fixed;
-    width: 22rem;
-    top: 30%;
-    left: 35%;
-    border: outset;
-    border-top: 0.3rem solid #bb0a21;
-    border-left: 0.3rem solid #ced0ce;
-    background-color: #f7f7ff;
-    padding: 0.3rem;
-    margin: 0.625rem;
-    opacity: 0.95; }
+
+.info {
+  grid-area: main;
+  display: flex;
+  width: 75%;
+  margin-top: 1%;
+  margin-left: 15%;
+  padding: 1rem;
+  border: outset;
+  border-top: 0.3rem solid #bb0a21;
+  border-left: 0.3rem solid #031927;
+  background-color: #A9010D;
+  color: #f7f7ff; }
+  .info .quienesSomos {
+    display: inline-block;
+    text-align: justify; }
+    .info .quienesSomos p {
+      text-decoration: none; }
+    .info .quienesSomos p h1 {
+      font-weight: bold;
+      font-size: 1rem;
+      text-align: center; }
+    .info .quienesSomos p h2 {
+      font-weight: bold;
+      font-size: 1rem; }
+    .info .quienesSomos p h3 {
+      font-weight: bold;
+      font-size: 1rem; }
+  .info .video {
+    margin-left: 1rem;
+    margin-top: 7rem; }
+
+span a {
+  color: #f7f7ff;
+  text-decoration: none; }
+
+span a:hover {
+  color: #031927; }
+
+.formulario {
+  position: fixed;
+  width: 22rem;
+  top: 30%;
+  left: 35%;
+  border: outset;
+  border-top: 0.3rem solid #bb0a21;
+  border-left: 0.3rem solid #ced0ce;
+  background-color: #f7f7ff;
+  padding: 0.3rem;
+  margin: 0.625rem;
+  opacity: 0.95; }
 
 /*propiedades de la section*/
+.seccionVentas {
+  grid-area: seccionVentas; }
+
 .seccionNosotras {
   grid-area: seccion;
   text-align: center;
@@ -455,15 +464,31 @@ input[type]:checked ~ span.middle {
     grid-template-rows: 0.3fr 1fr 1fr 0.3fr;
     grid-template-areas: "header header header" "seccionUnificada seccionUnificada seccionUnificada" "main main main" "footer footer footer"; }
   .contenedorDos {
-    height: 425vh;
+    height: 380vh;
     background-color: #ced0ce; }
   header nav ul li {
-    padding-right: 1rem; }
+    padding-right: .5rem; }
     header nav ul li a {
-      font-size: 1.2rem; }
+      font-size: 1rem; }
+  nav .isologotipo {
+    margin-right: 1rem; }
+  main {
+    margin-top: 5%; }
   main p {
-    font-size: 1.8rem;
+    width: 100%;
+    margin-left: 1rem;
+    font-size: 2rem;
     margin-top: 0.3rem; }
+  .seccionUnificada {
+    padding: 0; }
+    .seccionUnificada .seccionUno {
+      padding: .625rem 1rem; }
+    .seccionUnificada .seccionDos {
+      padding: .625rem 1rem; }
+    .seccionUnificada .seccionTres {
+      padding: .625rem 1rem; }
+  .publicaciones {
+    margin-top: 5%; }
   .consultas {
     display: none; }
   .escribinos {
@@ -489,12 +514,12 @@ input[type]:checked ~ span.middle {
     place-content: space-between;
     grid-template-areas: "header header header" "main main main" "seccionUnificada seccionUnificada seccionUnificada" "footer footer footer"; }
   .contenedorDos {
-    height: auto;
     background-color: #ced0ce; }
   .contenedorNosotras {
-    height: 380vh; }
+    height: 380vh;
+    gap: .5rem; }
   header {
-    justify-content: start; }
+    margin-bottom: 1%; }
     header nav ul li {
       font-size: 0.5rem; }
   .navbar-toggler {
@@ -506,22 +531,8 @@ input[type]:checked ~ span.middle {
     width: 100%;
     margin-left: 1.5rem;
     text-align: center; }
-  .seccionUnificada .seccionUno, .seccionUnificada .seccionDos, .seccionUnificada .seccionTres {
-    padding: 5%;
-    margin: 5%; }
-  .seccionUnificada {
-    margin-left: 30%; }
-  .seccionUno {
-    margin-top: 1%;
-    width: 5rem; }
-    .seccionUno p {
-      font-size: .8rem; }
-  .seccionDos p {
-    font-size: .8rem; }
-  .seccionTres p {
-    font-size: .8rem; }
   .info {
-    margin-top: 10%; }
+    margin-top: 20%; }
     .info .quienesSomos {
       text-align: justify; }
       .info .quienesSomos p {
@@ -560,22 +571,23 @@ input[type]:checked ~ span.middle {
     display: none; }
   .seccionUnificada {
     display: inline-block;
-    justify-self: start; }
+    justify-self: start;
+    margin-left: 25%; }
     .seccionUnificada .seccionUno {
-      width: 11rem;
-      margin-top: 1rem;
-      margin-left: 0.4rem;
-      font-size: 1.3rem; }
+      padding: 5%;
+      margin: 5%;
+      font-size: 1rem;
+      width: 11rem; }
     .seccionUnificada .seccionDos {
-      width: 11rem;
-      margin-top: 1rem;
-      margin-left: 0.4rem;
-      font-size: 1.3rem; }
+      padding: 5%;
+      margin: 5%;
+      font-size: 1rem;
+      width: 11rem; }
     .seccionUnificada .seccionTres {
-      width: 11rem;
-      margin-top: 1rem;
-      margin-left: 0.4rem;
-      font-size: 1.3rem; }
+      padding: 5%;
+      margin: 5%;
+      font-size: 1rem;
+      width: 11rem; }
   main .formulario {
     width: 15rem;
     left: 15%;
@@ -588,16 +600,18 @@ input[type]:checked ~ span.middle {
   .contenedorUno {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.3fr 1fr 1fr 0.3fr;
-    gap: 1rem;
+    gap: 2rem;
     grid-template-areas: "header header" "main main" "seccionUnificada seccionUnificada" "footer footer"; }
   header nav ul li {
     margin-top: 1rem; }
   header nav ul li a {
     font-size: 1rem; }
+  .info {
+    margin-top: 10%; }
   main p {
     display: block;
-    font-size: 1.3rem; }
-  main .publicacionUno, main .publicacionDos, main .publicacionTres, main .publicacionCuatro, main .publicacionCinco, main .publicacionSeis {
+    font-size: 1rem; }
+  .publicaciones .publicacionUno, .publicaciones .publicacionDos, .publicaciones .publicacionTres, .publicaciones .publicacionCuatro, .publicaciones .publicacionCinco, .publicaciones .publicacionSeis {
     display: inline-block;
     margin: 5rem 1rem;
     box-shadow: 4px 5px #031927; }

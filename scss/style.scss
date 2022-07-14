@@ -66,7 +66,7 @@ header{
         display: inline-flex;
         background-color: $color-principal;
         box-shadow: 4px 5px $gradiente-dark-color-principal;
-        margin-right: 1rem;
+        margin-right: 6rem;
         align-items: center;
     }
     .isologotipo:hover{
@@ -131,6 +131,8 @@ main{
         border-bottom: 0.5rem solid $color-text-dark;
         color: $color-text;
     }
+}
+.publicaciones{
     %cards {
         display: inline-block;
         margin: 5rem 3rem;
@@ -169,98 +171,99 @@ main{
             width: 16rem;
             height: 14rem;
         }
-    button {
-    position: relative;
-    margin-top: 2rem;
-    margin-left: 4.5rem;
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
-    border: 0;
-    vertical-align: middle;
-    background: transparent;
-    padding: 0;
-    font-size: inherit;
-    font-family: inherit;
-   }   
-    button.contactanos {
-    width: 12rem;
-    height: auto;
+        button {
+            position: relative;
+            margin-top: 2rem;
+            margin-left: 4.5rem;
+            display: inline-block;
+            cursor: pointer;
+            outline: none;
+            border: 0;
+            vertical-align: middle;
+            background: transparent;
+            padding: 0;
+            font-size: inherit;
+            font-family: inherit;
+        }   
+        button.contactanos {
+            width: 12rem;
+            height: auto;
+        }
+        button.contactanos .circle {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            position: relative;
+            display: block;
+            margin: 0;
+            width: 3rem;
+            height: 3rem;
+            background: #A9010D;
+            border-radius: 1.625rem;
+        }
+        button.contactanos .circle .icon {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background: #fff;
+        }
+        button.contactanos .circle .icon.arrow {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            left: 0.625rem;
+            width: 1.125rem;
+            height: 0.125rem;
+            background: none;
+        }
+        button.contactanos .circle .icon.arrow::before {
+            position: absolute;
+            content: "";
+            top: -0.29rem;
+            right: 0.0625rem;
+            width: 0.625rem;
+            height: 0.625rem;
+            border-top: 0.125rem solid $color-text;
+            border-right: 0.125rem solid $color-text;
+            transform: rotate(45deg);
+        }
+        button.contactanos .button-text {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 0.75rem 0;
+            margin: 0 0 0 1.85rem;
+            color: $color-text-dark;
+            font-weight: 700;
+            line-height: 1.6;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        button:hover .circle {
+            width: 100%;
+        }
+        button:hover .circle .icon.arrow {
+            background: $color-text;
+            transform: translate(1rem, 0);
+        }
+        button:hover .button-text {
+            color: $color-text;
+        }
    }
-   button.contactanos .circle {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: relative;
-    display: block;
-    margin: 0;
-    width: 3rem;
-    height: 3rem;
-    background: #A9010D;
-    border-radius: 1.625rem;
-   }
-   button.contactanos .circle .icon {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    background: #fff;
-   }
-   button.contactanos .circle .icon.arrow {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    left: 0.625rem;
-    width: 1.125rem;
-    height: 0.125rem;
-    background: none;
-   }
-   button.contactanos .circle .icon.arrow::before {
-    position: absolute;
-    content: "";
-    top: -0.29rem;
-    right: 0.0625rem;
-    width: 0.625rem;
-    height: 0.625rem;
-    border-top: 0.125rem solid $color-text;
-    border-right: 0.125rem solid $color-text;
-    transform: rotate(45deg);
-   }
-   button.contactanos .button-text {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 0.75rem 0;
-    margin: 0 0 0 1.85rem;
-    color: $color-text-dark;
-    font-weight: 700;
-    line-height: 1.6;
-    text-align: center;
-    text-transform: uppercase;
-   }
-   button:hover .circle {
-    width: 100%;
-   }
-   button:hover .circle .icon.arrow {
-    background: $color-text;
-    transform: translate(1rem, 0);
-   }
-   button:hover .button-text {
+}
+.info{
+    grid-area: main;
+    display: flex;
+    width: 75%;
+    margin-top: 1%;
+    margin-left: 15%;
+    padding: 1rem;
+    border: outset;
+    border-top: 0.3rem solid $gradiente-color-principal;
+    border-left: 0.3rem solid $color-text-dark;
+    background-color: $color-principal;
     color: $color-text;
-   }
-   }
-    .info{
-        grid-area: main;
-        display: flex;
-        width: 75%;
-        margin-top: 5%;
-        margin-left: 15%;
-        padding: 1rem;
-        border: outset;
-        border-top: 0.3rem solid $gradiente-color-principal;
-        border-left: 0.3rem solid $color-text-dark;
-        background-color: $color-principal;
-        color: $color-text;
         .quienesSomos{
             display: inline-block;
             text-align: justify;
@@ -306,8 +309,10 @@ main{
         margin: 0.625rem;
         opacity: 0.95;
     }
-}
 /*propiedades de la section*/
+.seccionVentas{
+    grid-area: seccionVentas;
+}
 .seccionNosotras{
     grid-area: seccion;
     text-align: center;
@@ -387,13 +392,12 @@ main{
     -webkit-transform: translate(0, 0.25em);
     transform: translate(0, 0.25em);
 }
-    %botones:hover::before{
-        -webkit-box-shadow: 0 0 0 2px $color-border;
-        box-shadow: 0 0 0 2px $color-border;
-        -webkit-transform: translate3d(0, 0.5em, -1em);
-        transform: translate3d(0, 0.5em, -1em);
-    }
-
+ %botones:hover::before{
+    -webkit-box-shadow: 0 0 0 2px $color-border;
+    box-shadow: 0 0 0 2px $color-border;
+    -webkit-transform: translate3d(0, 0.5em, -1em);
+    transform: translate3d(0, 0.5em, -1em);
+}
 }
 .seccionCuatro{
     grid-area: seccionCuatro;
@@ -544,18 +548,41 @@ input[type = "checkbox"] {
                             "footer footer footer";
     }
     .contenedorDos{
-        height: 425vh;
+        height: 380vh;
         background-color: $color-background;
     }
     header nav ul li{
-        padding-right: 1rem;
+        padding-right: .5rem;
         a{
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
     }
+    nav .isologotipo{
+        margin-right: 1rem;
+    }
+    main{
+        margin-top: 5%;
+    }
     main p{
-        font-size: 1.8rem;
+        width: 100%;
+        margin-left: 1rem;
+        font-size: 2rem;
         margin-top: 0.3rem;
+    }
+    .seccionUnificada{
+        padding: 0;
+        .seccionUno{
+            padding: .625rem 1rem;
+        }
+        .seccionDos{
+            padding: .625rem 1rem;
+        }
+        .seccionTres{
+            padding: .625rem 1rem;
+        }
+    }
+    .publicaciones{
+        margin-top: 5%;
     }
     .consultas{
         display: none;
@@ -592,14 +619,14 @@ input[type = "checkbox"] {
                             "footer footer footer";
     }
     .contenedorDos{
-        height: auto;
         background-color: $color-background;
     }
     .contenedorNosotras{
         height: 380vh;
+        gap: .5rem;
     }
     header{
-            justify-content: start;
+            margin-bottom: 1%;
         nav ul li{
             font-size: 0.5rem;
         }
@@ -608,7 +635,6 @@ input[type = "checkbox"] {
         background-color: $color-principal;
         border-color: $color-text;
     }
-    
     main p{
         margin-top: 5rem ;
         margin-bottom: 1rem;
@@ -616,32 +642,9 @@ input[type = "checkbox"] {
         margin-left: 1.5rem;
         text-align: center;
     }
-    .seccionUnificada .seccionUno, .seccionUnificada .seccionDos, .seccionUnificada .seccionTres{
-        padding: 5%;
-        margin: 5%;
-    }
-    .seccionUnificada{
-        margin-left: 30%;
-    }
-    .seccionUno{
-        margin-top: 1%;
-        width: 5rem;
-        p {
-            font-size: .8rem;
-        }
-    }
-    .seccionDos{
-        p {
-            font-size: .8rem;
-        }
-    }
-    .seccionTres{
-        p {
-          font-size: .8rem;
-        }
-    }
+
     .info{
-        margin-top: 10%;
+        margin-top: 20%;
         .quienesSomos{
             text-align: justify;
             p{
@@ -695,23 +698,24 @@ input[type = "checkbox"] {
     .seccionUnificada{
         display: inline-block;
         justify-self: start;
+        margin-left: 25%;
         .seccionUno{
+            padding: 5%;
+            margin: 5%;
+            font-size: 1rem;
             width: 11rem;
-            margin-top: 1rem;
-            margin-left: 0.4rem;
-            font-size: 1.3rem;
         }
         .seccionDos{
+            padding: 5%;
+            margin: 5%;
+            font-size: 1rem;
             width: 11rem;
-            margin-top: 1rem;
-            margin-left: 0.4rem;
-            font-size: 1.3rem;
         }
         .seccionTres{
+            padding: 5%;
+            margin: 5%;
+            font-size: 1rem;
             width: 11rem;
-            margin-top: 1rem;
-            margin-left: 0.4rem;
-            font-size: 1.3rem;
         }
     }
     main .formulario {
@@ -728,7 +732,7 @@ input[type = "checkbox"] {
     .contenedorUno{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.3fr 1fr 1fr 0.3fr;
-        gap: 1rem;
+        gap: 2rem;
         grid-template-areas: "header header"
                             "main main"
                             "seccionUnificada seccionUnificada"
@@ -740,10 +744,12 @@ input[type = "checkbox"] {
     header nav ul li a{
         font-size: 1rem;
     }
-
+    .info{
+        margin-top: 10%;
+    }
     main p{
         display: block;
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     %cards {
         display: inline-block;
