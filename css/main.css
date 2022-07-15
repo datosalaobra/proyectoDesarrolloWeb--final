@@ -25,11 +25,11 @@
   grid-template-areas: "header header header header" "seccionUnificada seccionUnificada seccionUnificada seccionUnificada" "main main main main" "seccionCuatro footer footer footer"; }
 
 .contenedorDos {
-  height: 350vh;
+  height: 280vh;
   background-color: #ced0ce; }
 
 .contenedorNosotras {
-  height: 400vh;
+  height: 350vh;
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr;
   grid-template-rows: 0.3fr 2fr 1fr 0.3fr;
@@ -124,8 +124,9 @@ main {
 
 .publicaciones .publicacionUno, .publicaciones .publicacionDos, .publicaciones .publicacionTres, .publicaciones .publicacionCuatro, .publicaciones .publicacionCinco, .publicaciones .publicacionSeis {
   display: inline-block;
-  margin: 5rem 3rem;
+  margin: 6rem 2rem;
   box-shadow: 4px 5px #031927;
+  text-shadow: #031927 0.1em 0.1em 0.2em;
   text-decoration: none; }
 
 .publicaciones .card-body {
@@ -134,7 +135,10 @@ main {
   padding: 1rem;
   text-align: center; }
   .publicaciones .card-body .card-title {
-    font-size: 1rem; }
+    font-size: 1rem;
+    text-shadow: #f7f7ff 0.1em 0.1em 0.2em; }
+  .publicaciones .card-body h2 {
+    text-shadow: #f7f7ff 0.1em 0.1em 0.2em; }
   .publicaciones .card-body .card-text {
     margin: 0;
     font-size: 1rem;
@@ -213,10 +217,10 @@ main {
 .info {
   grid-area: main;
   display: flex;
-  width: 75%;
-  margin-top: 8%;
-  margin-left: 15%;
-  padding: 1rem;
+  width: 55%;
+  margin-top: 5%;
+  margin-left: .5%;
+  padding: 3rem;
   border: outset;
   border-top: 0.3rem solid #bb0a21;
   border-left: 0.3rem solid #031927;
@@ -227,22 +231,35 @@ main {
     .info .quienesSomos h1 {
       font-weight: bold;
       font-size: 2rem;
-      text-align: center; }
+      text-align: center;
+      text-shadow: #031927 0.1em 0.1em 0.2em; }
     .info .quienesSomos h2 {
       font-weight: bold;
       font-size: 2rem;
-      text-align: center; }
+      text-align: center;
+      text-shadow: #031927 0.1em 0.1em 0.2em; }
     .info .quienesSomos h3 {
       font-weight: bold;
       font-size: 2rem;
-      text-align: center; }
+      text-align: center;
+      text-shadow: #031927 0.1em 0.1em 0.2em; }
+    .info .quienesSomos h4 {
+      font-weight: bold;
+      font-size: 2rem;
+      text-align: center;
+      text-shadow: #031927 0.1em 0.1em 0.2em; }
     .info .quienesSomos p {
+      width: 90%;
       font-size: 1.31rem;
       text-align: justify;
-      margin-left: 3rem; }
+      margin-left: 3rem;
+      text-shadow: #031927 0.1em 0.1em 0.2em; }
   .info .video {
-    margin-right: 3rem;
-    margin-top: 5rem; }
+    position: fixed;
+    left: 56%;
+    z-index: 2;
+    border-top: 0.3rem solid #bb0a21;
+    border-left: 0.3rem solid #031927; }
 
 span a {
   color: #f7f7ff;
@@ -302,6 +319,7 @@ span a:hover {
     font-weight: 600;
     text-transform: uppercase;
     color: #f7f7ff;
+    margin-top: 8rem;
     padding: 1.25em 2em;
     background: #bb0a21;
     border: 2px solid #b18597;
@@ -469,9 +487,10 @@ input[type]:checked ~ span.middle {
     grid-template-areas: "header header header" "seccionUnificada seccionUnificada seccionUnificada" "main main main" "footer footer footer"; }
   .contenedorDos {
     display: grid;
-    width: 100%;
-    height: 100%;
+    height: 420vh;
     background-color: #ced0ce; }
+  .contenedorNosotras {
+    height: 235vh; }
   header {
     margin-bottom: 1rem; }
   header nav ul li {
@@ -495,153 +514,23 @@ input[type]:checked ~ span.middle {
       padding: .625rem 1rem; }
     .seccionUnificada .seccionTres {
       padding: .625rem 1rem; }
-  .consultas {
-    display: none; }
-  .escribinos {
-    color: #f7f7ff;
-    font-size: 1rem; }
-  .logo {
-    display: none; }
-  .logoCucicba {
-    display: none; }
-  .formulario {
-    top: 30%;
-    left: 35%; }
-  .video {
-    display: none; } }
-
-/* adaptación a mobile */
-@media screen and (max-width: 600px) {
-  .contenedorUno {
-    height: 120vh;
-    background-size: cover;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 1fr 1fr 0.3fr;
-    gap: .5rem;
-    place-content: space-between;
-    grid-template-areas: "header header header" "main main main" "seccionUnificada seccionUnificada seccionUnificada" "footer footer footer"; }
-  .contenedorDos {
-    display: grid;
-    height: 100%;
-    background-color: #ced0ce; }
-  .contenedorNosotras {
-    height: 480vh;
-    gap: .5rem; }
-  header {
-    margin-bottom: 1rem; }
-    header nav ul li {
-      font-size: 0.5rem; }
-  .navbar-toggler {
-    background-color: #A9010D;
-    border-color: #f7f7ff; }
-  main p {
-    margin-top: 5rem;
-    margin-bottom: 1rem;
-    width: 100%;
-    margin-left: 1.5rem;
-    text-align: center; }
   .info {
-    margin-top: 20%; }
-    .info .quienesSomos {
-      text-align: justify; }
-      .info .quienesSomos p {
-        border: none;
-        margin: 0; }
-  .video {
-    display: none; }
-  .publicacionUno {
-    margin-bottom: 1rem; }
-  .publicacionDos {
-    margin-top: 1rem;
-    margin-bottom: 0.5rem; }
-  .publicacionTres {
-    margin-top: 1rem;
-    margin-bottom: 1rem; }
-  .publicacionCuatro {
-    margin-top: 1rem;
-    margin-bottom: 0.5rem; }
-  .publicacionCinco {
-    margin-top: 1rem;
-    margin-bottom: 0.5rem; }
-  .publicacionSeis {
-    margin-top: 1rem;
-    margin-bottom: 0.5rem; }
-  main .card-body .card-text {
-    justify-content: start;
-    height: 16rem;
-    width: 16rem;
-    font-size: 1rem; }
-  .botonWhatsapp {
-    right: 5%;
-    bottom: 10%; }
-  .consultas {
-    display: none; }
-  .escribinos {
-    display: none; }
-  .seccionUnificada {
-    display: inline-block;
-    justify-self: start;
-    margin-left: 25%; }
-    .seccionUnificada .seccionUno {
-      padding: 5%;
-      margin: 5%;
+    width: 75%;
+    padding: 2.5rem;
+    margin: 5% 1% 1% 15%; }
+    .info .quienesSomos h1 {
+      font-size: 2rem; }
+    .info .quienesSomos h2 {
+      font-size: 2rem; }
+    .info .quienesSomos h3 {
+      font-size: 2rem; }
+    .info .quienesSomos p {
+      width: 95%;
       font-size: 1rem;
-      width: 12rem; }
-    .seccionUnificada .seccionDos {
-      padding: 5%;
-      margin: 5%;
-      font-size: 1rem;
-      width: 12rem; }
-    .seccionUnificada .seccionTres {
-      padding: 5%;
-      margin: 5%;
-      font-size: 1rem;
-      width: 12rem; }
-  .seccionPages {
-    display: none; }
-  main .formulario {
-    width: 15rem;
-    left: 25%;
-    top: 20%; }
-  footer {
-    font-size: .7rem; } }
-
-/* adaptación a mobile x-samll */
-@media screen and (max-width: 376px) {
-  .contenedorUno {
-    height: 120vh;
-    grid-template-columns: 0.5fr 1fr;
-    grid-template-rows: 0.3fr 1fr 0.3fr;
-    gap: 1rem;
-    background-size: cover;
-    background-color: #ced0ce; }
-  .contenedorNosotras {
-    height: 200vh; }
-  .main {
-    inline-size: 20rem; }
-  header nav ul li {
-    margin-top: 1rem; }
-  header nav ul li a {
-    font-size: 1rem; }
-  .info {
-    margin-top: 3%; }
-    .info .quienesSomos {
-      display: inline-block; }
-      .info .quienesSomos h1 {
-        font-weight: bold;
-        font-size: .8rem;
-        text-align: center; }
-      .info .quienesSomos h2 {
-        font-weight: bold;
-        font-size: .8rem;
-        text-align: center; }
-      .info .quienesSomos h3 {
-        font-weight: bold;
-        font-size: .8rem;
-        text-align: center; }
-      .info .quienesSomos p {
-        font-size: .6rem;
-        text-align: justify; }
+      text-align: justify;
+      margin-left: .8rem; }
+    .info .video {
+      display: none; }
   .publicaciones .publicacionUno, .publicaciones .publicacionDos, .publicaciones .publicacionTres, .publicaciones .publicacionCuatro, .publicaciones .publicacionCinco, .publicaciones .publicacionSeis {
     margin: 1px; }
   .publicaciones .publicacionUno {
@@ -668,14 +557,175 @@ input[type]:checked ~ span.middle {
     margin-top: 25%;
     margin-bottom: 20%;
     margin-left: 5%; }
+  .consultas {
+    display: none; }
+  .escribinos {
+    color: #031927;
+    font-size: 1rem; }
+  .logo {
+    display: none; }
+  .logoCucicba {
+    display: none; }
+  .formulario {
+    top: 30%;
+    left: 35%; } }
+
+/* adaptación a mobile */
+@media screen and (max-width: 600px) {
+  .contenedorUno {
+    height: 120vh;
+    background-size: cover;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 0.3fr;
+    gap: .5rem;
+    place-content: space-between;
+    grid-template-areas: "header header header" "main main main" "seccionUnificada seccionUnificada seccionUnificada" "footer footer footer"; }
+  .contenedorDos {
+    display: grid;
+    height: 520vh;
+    background-color: #ced0ce; }
+  .contenedorNosotras {
+    height: 250vh;
+    gap: 1rem; }
+  header {
+    margin-bottom: 1rem; }
+    header nav ul li {
+      font-size: 0.5rem; }
+  .navbar-toggler {
+    background-color: #A9010D;
+    border-color: #f7f7ff; }
+  main p {
+    margin-top: 1rem;
+    margin-bottom: .1rem;
+    width: 100%;
+    margin-left: 1.5rem;
+    text-align: center;
+    font-size: x-large; }
+  .info {
+    margin-top: 15%;
+    padding: 2%; }
+    .info .quienesSomos {
+      display: inline-block; }
+      .info .quienesSomos h1 {
+        font-weight: bold;
+        font-size: 1.1rem;
+        text-align: center; }
+      .info .quienesSomos h2 {
+        font-weight: bold;
+        font-size: 1.1rem;
+        text-align: center; }
+      .info .quienesSomos h3 {
+        font-weight: bold;
+        font-size: 1.1rem;
+        text-align: center; }
+      .info .quienesSomos h4 {
+        font-weight: bold;
+        font-size: 1.1rem;
+        text-align: center; }
+      .info .quienesSomos p {
+        font-size: .9rem;
+        text-align: justify;
+        width: 90%; }
+  .botonWhatsapp {
+    right: 5%;
+    bottom: 10%; }
+  .consultas {
+    display: none; }
+  .escribinos {
+    display: none; }
+  .seccionUnificada {
+    display: inline-block;
+    justify-self: start;
+    margin-left: 25%; }
+    .seccionUnificada .seccionUno {
+      padding: 3%;
+      margin: 3% 5% 10% 9%;
+      font-size: 1rem;
+      width: 12rem; }
+    .seccionUnificada .seccionDos {
+      padding: 3%;
+      margin: 3% 5% 10% 9%;
+      font-size: 1rem;
+      width: 12rem; }
+    .seccionUnificada .seccionTres {
+      padding: 3%;
+      margin: 3% 5% 10% 9%;
+      font-size: 1rem;
+      width: 12rem; }
+  .seccionPages {
+    display: none; }
+  main .formulario {
+    width: 15rem;
+    left: 25%;
+    top: 20%; }
+  footer {
+    font-size: .7rem; } }
+
+/* adaptación a mobile x-samll */
+@media screen and (max-width: 376px) {
+  .contenedorUno {
+    height: 120vh;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 0.3fr 1fr 0.3fr;
+    gap: 1rem;
+    background-size: cover;
+    background-color: #ced0ce; }
+  .contenedorNosotras {
+    height: 280vh; }
+  main p {
+    margin: 10%;
+    font-size: x-large; }
+  header nav ul li {
+    margin-top: 1rem; }
+  header nav ul li a {
+    font-size: 1rem; }
+  .info {
+    margin-top: 3%; }
+    .info .quienesSomos {
+      display: inline-block; }
+      .info .quienesSomos h1 {
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: center; }
+      .info .quienesSomos h2 {
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: center; }
+      .info .quienesSomos h3 {
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: center; }
+      .info .quienesSomos p {
+        font-size: .7rem;
+        text-align: justify; }
+  .publicaciones .publicacionUno, .publicaciones .publicacionDos, .publicaciones .publicacionTres, .publicaciones .publicacionCuatro, .publicaciones .publicacionCinco, .publicaciones .publicacionSeis {
+    margin: 1px; }
+  .publicaciones .publicacionUno {
+    margin: 20% 25% 0% 5%; }
+  .publicaciones .publicacionDos {
+    margin: 20% 25% 0% 5%; }
+  .publicaciones .publicacionTres {
+    margin: 20% 25% 0% 5%; }
+  .publicaciones .publicacionCuatro {
+    margin: 20% 25% 0% 5%; }
+  .publicaciones .publicacionCinco {
+    margin: 20% 25% 0% 5%; }
+  .publicaciones .publicacionSeis {
+    margin: 20% 25% 0% 5%; }
   .seccionUnificada {
     padding: 0; }
     .seccionUnificada .seccionUno {
-      margin-right: 20%; }
+      margin: 0% 0% 10% 3%; }
+    .seccionUnificada p {
+      font-size: medium; }
     .seccionUnificada .seccionDos {
-      margin-right: 20%; }
+      margin: 0% 0% 10% 3%; }
+    .seccionUnificada p {
+      font-size: medium; }
     .seccionUnificada .seccionTres {
-      margin-right: 20%; }
+      margin: 0% 0% 10% 3%; }
+    .seccionUnificada p {
+      font-size: medium; }
   footer {
     margin-top: 2rem;
     font-size: 0.5rem; }
