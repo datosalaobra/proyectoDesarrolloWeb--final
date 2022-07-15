@@ -32,7 +32,7 @@
                         "seccionCuatro footer footer footer";
 }
 .contenedorDos{
-    height: 280vh;
+    height: 100%;
     background-color: $color-background;
 }
 .contenedorNosotras{
@@ -134,7 +134,7 @@ main{
 .publicaciones{
     %cards {
         display: inline-block;
-        margin: 5rem 3rem;
+        margin: 5rem 3rem 0 5rem;
         box-shadow: 4px 5px $color-text-dark;
         text-shadow: $color-text-dark 0.1em 0.1em 0.2em; 
         text-decoration: none;
@@ -642,34 +642,34 @@ input[type = "checkbox"] {
                 margin:1px;
             }
             .publicacionUno{
-                margin-top: 25%;
-                margin-bottom: 20%;
-                margin-left: 5%;
+                margin-top: 10%;
+                margin-bottom: 1%;
+                margin-left: 15%;
             }
             .publicacionDos{
-                margin-top: 25%;
-                margin-bottom: 20%;
-                margin-left: 5%;
+                margin-top: 10%;
+                margin-bottom: 1%;
+                margin-left: 15%;
             }
             .publicacionTres{
-                margin-top: 25%;
-                margin-bottom: 20%;
-                margin-left: 5%;
+                margin-top: 10%;
+                margin-bottom: 1%;
+                margin-left: 15%;
             }
             .publicacionCuatro{
-                margin-top: 25%;
-                margin-bottom: 20%;
-                margin-left: 5%;
+                margin-top: 10%;
+                margin-bottom: 1%;
+                margin-left: 15%;
             }
             .publicacionCinco{
-                margin-top: 25%;
-                margin-bottom: 20%;
-                margin-left: 5%;
+                margin-top: 10%;
+                margin-bottom: 1%;
+                margin-left: 15%;
             }
             .publicacionSeis{
-                margin-top: 25%;
-                margin-bottom: 20%;
-                margin-left: 5%;
+                margin-top: 10%;
+                margin-bottom: 1%;
+                margin-left: 15%;
             }
         }
         
@@ -764,6 +764,41 @@ input[type = "checkbox"] {
             }
         }
     }
+    .publicaciones{
+        %cards{
+            margin:1px;
+        }
+        .publicacionUno{
+            margin-top: 20%;
+            margin-bottom: 5%;
+            margin-left: 15%;
+        }
+        .publicacionDos{
+            margin-top: 15%;
+            margin-bottom: 1%;
+            margin-left: 15%;
+        }
+        .publicacionTres{
+            margin-top: 15%;
+            margin-bottom: 1%;
+            margin-left: 15%;
+        }
+        .publicacionCuatro{
+            margin-top: 15%;
+            margin-bottom: 1%;
+            margin-left: 15%;
+        }
+        .publicacionCinco{
+            margin-top: 15%;
+            margin-bottom: 1%;
+            margin-left: 15%;
+        }
+        .publicacionSeis{
+            margin-top: 15%;
+            margin-bottom: 20%;
+            margin-left: 15%;
+        }
+    }
     .botonWhatsapp{
         right: 5%;
         bottom: 10%;
@@ -802,7 +837,7 @@ input[type = "checkbox"] {
     }
     main .formulario {
         width: 15rem;
-        left: 25%;
+        left: 20%;
         top: 20%;
     }
     footer{
@@ -826,7 +861,6 @@ input[type = "checkbox"] {
         margin: 10%;
         font-size: x-large;
     }
-    
     header nav ul li{
         margin-top: 1rem;
     }
@@ -859,9 +893,6 @@ input[type = "checkbox"] {
         }
     }
     .publicaciones{
-        %cards{
-            margin:1px;
-        }
         .publicacionUno{
             margin: 20% 25% 0% 5%;
         }
@@ -901,6 +932,11 @@ input[type = "checkbox"] {
             p{
                 font-size: medium;
             }
+    }
+    main .formulario {
+        width: 15rem;
+        left: 10%;
+        top: 20%;
     }
     footer{
         margin-top: 2rem;

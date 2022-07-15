@@ -25,7 +25,7 @@
   grid-template-areas: "header header header header" "seccionUnificada seccionUnificada seccionUnificada seccionUnificada" "main main main main" "seccionCuatro footer footer footer"; }
 
 .contenedorDos {
-  height: 280vh;
+  height: 100%;
   background-color: #ced0ce; }
 
 .contenedorNosotras {
@@ -124,7 +124,7 @@ main {
 
 .publicaciones .publicacionUno, .publicaciones .publicacionDos, .publicaciones .publicacionTres, .publicaciones .publicacionCuatro, .publicaciones .publicacionCinco, .publicaciones .publicacionSeis {
   display: inline-block;
-  margin: 5rem 3rem;
+  margin: 5rem 3rem 0 5rem;
   box-shadow: 4px 5px #031927;
   text-shadow: #031927 0.1em 0.1em 0.2em;
   text-decoration: none; }
@@ -535,29 +535,29 @@ input[type]:checked ~ span.middle {
   .publicaciones .publicacionUno, .publicaciones .publicacionDos, .publicaciones .publicacionTres, .publicaciones .publicacionCuatro, .publicaciones .publicacionCinco, .publicaciones .publicacionSeis {
     margin: 1px; }
   .publicaciones .publicacionUno {
-    margin-top: 25%;
-    margin-bottom: 20%;
-    margin-left: 5%; }
+    margin-top: 10%;
+    margin-bottom: 1%;
+    margin-left: 15%; }
   .publicaciones .publicacionDos {
-    margin-top: 25%;
-    margin-bottom: 20%;
-    margin-left: 5%; }
+    margin-top: 10%;
+    margin-bottom: 1%;
+    margin-left: 15%; }
   .publicaciones .publicacionTres {
-    margin-top: 25%;
-    margin-bottom: 20%;
-    margin-left: 5%; }
+    margin-top: 10%;
+    margin-bottom: 1%;
+    margin-left: 15%; }
   .publicaciones .publicacionCuatro {
-    margin-top: 25%;
-    margin-bottom: 20%;
-    margin-left: 5%; }
+    margin-top: 10%;
+    margin-bottom: 1%;
+    margin-left: 15%; }
   .publicaciones .publicacionCinco {
-    margin-top: 25%;
-    margin-bottom: 20%;
-    margin-left: 5%; }
+    margin-top: 10%;
+    margin-bottom: 1%;
+    margin-left: 15%; }
   .publicaciones .publicacionSeis {
-    margin-top: 25%;
-    margin-bottom: 20%;
-    margin-left: 5%; }
+    margin-top: 10%;
+    margin-bottom: 1%;
+    margin-left: 15%; }
   .consultas {
     display: none; }
   .escribinos {
@@ -627,6 +627,32 @@ input[type]:checked ~ span.middle {
         font-size: .9rem;
         text-align: justify;
         width: 90%; }
+  .publicaciones .publicacionUno, .publicaciones .publicacionDos, .publicaciones .publicacionTres, .publicaciones .publicacionCuatro, .publicaciones .publicacionCinco, .publicaciones .publicacionSeis {
+    margin: 1px; }
+  .publicaciones .publicacionUno {
+    margin-top: 20%;
+    margin-bottom: 5%;
+    margin-left: 15%; }
+  .publicaciones .publicacionDos {
+    margin-top: 15%;
+    margin-bottom: 1%;
+    margin-left: 15%; }
+  .publicaciones .publicacionTres {
+    margin-top: 15%;
+    margin-bottom: 1%;
+    margin-left: 15%; }
+  .publicaciones .publicacionCuatro {
+    margin-top: 15%;
+    margin-bottom: 1%;
+    margin-left: 15%; }
+  .publicaciones .publicacionCinco {
+    margin-top: 15%;
+    margin-bottom: 1%;
+    margin-left: 15%; }
+  .publicaciones .publicacionSeis {
+    margin-top: 15%;
+    margin-bottom: 20%;
+    margin-left: 15%; }
   .botonWhatsapp {
     right: 5%;
     bottom: 10%; }
@@ -657,7 +683,7 @@ input[type]:checked ~ span.middle {
     display: none; }
   main .formulario {
     width: 15rem;
-    left: 25%;
+    left: 20%;
     top: 20%; }
   footer {
     font-size: .7rem; } }
@@ -699,8 +725,6 @@ input[type]:checked ~ span.middle {
       .info .quienesSomos p {
         font-size: .7rem;
         text-align: justify; }
-  .publicaciones .publicacionUno, .publicaciones .publicacionDos, .publicaciones .publicacionTres, .publicaciones .publicacionCuatro, .publicaciones .publicacionCinco, .publicaciones .publicacionSeis {
-    margin: 1px; }
   .publicaciones .publicacionUno {
     margin: 20% 25% 0% 5%; }
   .publicaciones .publicacionDos {
@@ -727,6 +751,10 @@ input[type]:checked ~ span.middle {
       margin: 0% 0% 10% 3%; }
     .seccionUnificada p {
       font-size: medium; }
+  main .formulario {
+    width: 15rem;
+    left: 10%;
+    top: 20%; }
   footer {
     margin-top: 2rem;
     font-size: 0.5rem; }
