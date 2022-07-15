@@ -32,7 +32,7 @@
                         "seccionCuatro footer footer footer";
 }
 .contenedorDos{
-    height: 300vh;
+    height: 350vh;
     background-color: $color-background;
 }
 .contenedorNosotras{
@@ -47,7 +47,6 @@
                         "seccion seccion seccion"
                         "footer footer footer";    
 }
-
 /*propieades del header*/
 // nesting
 header{
@@ -256,7 +255,7 @@ main{
     grid-area: main;
     display: flex;
     width: 75%;
-    margin-top: 1%;
+    margin-top: 8%;
     margin-left: 15%;
     padding: 1rem;
     border: outset;
@@ -266,27 +265,30 @@ main{
     color: $color-text;
         .quienesSomos{
             display: inline-block;
-            text-align: justify;
-            p{
-                text-decoration: none;
-            }
-            p h1{
+            h1{
                 font-weight: bold;
-                font-size: 1rem;
+                font-size: 2rem;
                 text-align: center; 
             }
-            p h2{
+            h2{
                 font-weight: bold;
-                font-size: 1rem;
+                font-size: 2rem;
+                text-align: center;
             }
-            p h3{
+            h3{
                 font-weight: bold;
-                font-size: 1rem;
+                font-size: 2rem;
+                text-align: center;
+            }
+            p {
+                font-size: 1.31rem;
+                text-align: justify;
+                margin-left: 3rem;
             }
         }
         .video{
-            margin-left: 1rem;
-            margin-top: 7rem;
+            margin-right: 3rem;
+            margin-top: 5rem;
         }
     }
     span a{
@@ -738,17 +740,18 @@ input[type = "checkbox"] {
 /* adaptación a mobile x-samll */
 @media screen and (max-width:375px){
     .contenedorUno{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.3fr 1fr 1fr 0.3fr;
-        gap: 2rem;
-        grid-template-areas: "header header"
-                            "main main"
-                            "seccionUnificada seccionUnificada"
-                            "footer footer";
+        height: 120vh;
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows: 0.3fr 1fr 0.3fr;
+        gap: 1rem;
+        background-size: cover;
+        background-color: $color-background;
     }
-    .contenedorDos{
-        height: 100%;
-        display: grid;
+    .contenedorNosotras{
+        height: 300vh;
+    }
+    .main{
+        inline-size: 20rem;
     }
     header nav ul li{
         margin-top: 1rem;
@@ -757,14 +760,33 @@ input[type = "checkbox"] {
         font-size: 1rem;
     }
     .info{
-        margin-top: 10%;
-    }
-    main p{
-        display: block;
-        font-size: 1rem;
+        margin-top: 5%;
+        .quienesSomos{
+            display: inline-block;
+            h1{
+               font-weight: bold;
+               font-size: 1rem;
+               text-align: center; 
+            }
+            h2{
+               font-weight: bold;
+               font-size: 1rem;
+               text-align: center;
+            }
+            h3{
+               font-weight: bold;
+               font-size: 1rem;
+               text-align: center;
+            }
+            p {
+               font-size: .7rem;
+               text-align: justify;
+            }
+        }
     }
     footer{
-        font-size: 0.7rem;
+        margin-top: 2rem;
+        font-size: 0.5rem;
     }
     .info{
         margin-top: 20%;
