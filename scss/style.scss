@@ -708,6 +708,7 @@ input[type = "checkbox"] {
     .contenedorDos{
         display: grid;
         height: 100%;
+        width: 100%;
         background-color: $color-background;
     }
     .contenedorNosotras{
@@ -765,38 +766,35 @@ input[type = "checkbox"] {
         }
     }
     .publicaciones{
-        %cards{
-            margin:1px;
-        }
         .publicacionUno{
             margin-top: 20%;
             margin-bottom: 5%;
-            margin-left: 15%;
+            margin-left: 10%;
         }
         .publicacionDos{
             margin-top: 15%;
             margin-bottom: 1%;
-            margin-left: 15%;
+            margin-left: 10%;
         }
         .publicacionTres{
             margin-top: 15%;
             margin-bottom: 1%;
-            margin-left: 15%;
+            margin-left: 10%;
         }
         .publicacionCuatro{
             margin-top: 15%;
             margin-bottom: 1%;
-            margin-left: 15%;
+            margin-left: 10%;
         }
         .publicacionCinco{
             margin-top: 15%;
             margin-bottom: 1%;
-            margin-left: 15%;
+            margin-left: 10%;
         }
         .publicacionSeis{
             margin-top: 15%;
             margin-bottom: 20%;
-            margin-left: 15%;
+            margin-left: 10%;
         }
     }
     .botonWhatsapp{
@@ -845,7 +843,7 @@ input[type = "checkbox"] {
     }
 }
 /* adaptación a mobile x-samll */
-@media screen and (max-width:376px){
+@media screen and (max-width:375px){
     .contenedorUno{
         height: 120vh;
         grid-template-columns: 0.5fr 1fr;
@@ -853,6 +851,10 @@ input[type = "checkbox"] {
         gap: 1rem;
         background-size: cover;
         background-color: $color-background;
+    }
+    .contenedorDos{
+        height: 100%;
+        width: 100%;
     }
     .contenedorNosotras{
         height: 280vh;
@@ -893,23 +895,24 @@ input[type = "checkbox"] {
         }
     }
     .publicaciones{
+        margin-top: 2rem;
         .publicacionUno{
-            margin: 20% 25% 0% 5%;
+            margin: 11% 1% 20% 1%;
         }
         .publicacionDos{
-            margin: 20% 25% 0% 5%;
+            margin: 11% 1% 20% 1%;
         }
         .publicacionTres{
-            margin: 20% 25% 0% 5%;
+            margin: 11% 1% 20% 1%;
         }
         .publicacionCuatro{
-            margin: 20% 25% 0% 5%;
+            margin: 11% 1% 20% 1%;
         }
         .publicacionCinco{
-            margin: 20% 25% 0% 5%;
+            margin: 11% 1% 20% 1%;
         }
         .publicacionSeis{
-            margin: 20% 25% 0% 5%;
+            margin: 11% 1% 20% 1%;
         }
     }
     .seccionUnificada{

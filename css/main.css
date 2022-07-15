@@ -584,6 +584,7 @@ input[type]:checked ~ span.middle {
   .contenedorDos {
     display: grid;
     height: 100%;
+    width: 100%;
     background-color: #ced0ce; }
   .contenedorNosotras {
     height: 250vh;
@@ -627,32 +628,30 @@ input[type]:checked ~ span.middle {
         font-size: .9rem;
         text-align: justify;
         width: 90%; }
-  .publicaciones .publicacionUno, .publicaciones .publicacionDos, .publicaciones .publicacionTres, .publicaciones .publicacionCuatro, .publicaciones .publicacionCinco, .publicaciones .publicacionSeis {
-    margin: 1px; }
   .publicaciones .publicacionUno {
     margin-top: 20%;
     margin-bottom: 5%;
-    margin-left: 15%; }
+    margin-left: 10%; }
   .publicaciones .publicacionDos {
     margin-top: 15%;
     margin-bottom: 1%;
-    margin-left: 15%; }
+    margin-left: 10%; }
   .publicaciones .publicacionTres {
     margin-top: 15%;
     margin-bottom: 1%;
-    margin-left: 15%; }
+    margin-left: 10%; }
   .publicaciones .publicacionCuatro {
     margin-top: 15%;
     margin-bottom: 1%;
-    margin-left: 15%; }
+    margin-left: 10%; }
   .publicaciones .publicacionCinco {
     margin-top: 15%;
     margin-bottom: 1%;
-    margin-left: 15%; }
+    margin-left: 10%; }
   .publicaciones .publicacionSeis {
     margin-top: 15%;
     margin-bottom: 20%;
-    margin-left: 15%; }
+    margin-left: 10%; }
   .botonWhatsapp {
     right: 5%;
     bottom: 10%; }
@@ -689,7 +688,7 @@ input[type]:checked ~ span.middle {
     font-size: .7rem; } }
 
 /* adaptación a mobile x-samll */
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 375px) {
   .contenedorUno {
     height: 120vh;
     grid-template-columns: 0.5fr 1fr;
@@ -697,6 +696,9 @@ input[type]:checked ~ span.middle {
     gap: 1rem;
     background-size: cover;
     background-color: #ced0ce; }
+  .contenedorDos {
+    height: 100%;
+    width: 100%; }
   .contenedorNosotras {
     height: 280vh; }
   main p {
@@ -725,18 +727,20 @@ input[type]:checked ~ span.middle {
       .info .quienesSomos p {
         font-size: .7rem;
         text-align: justify; }
-  .publicaciones .publicacionUno {
-    margin: 20% 25% 0% 5%; }
-  .publicaciones .publicacionDos {
-    margin: 20% 25% 0% 5%; }
-  .publicaciones .publicacionTres {
-    margin: 20% 25% 0% 5%; }
-  .publicaciones .publicacionCuatro {
-    margin: 20% 25% 0% 5%; }
-  .publicaciones .publicacionCinco {
-    margin: 20% 25% 0% 5%; }
-  .publicaciones .publicacionSeis {
-    margin: 20% 25% 0% 5%; }
+  .publicaciones {
+    margin-top: 2rem; }
+    .publicaciones .publicacionUno {
+      margin: 11% 1% 20% 1%; }
+    .publicaciones .publicacionDos {
+      margin: 11% 1% 20% 1%; }
+    .publicaciones .publicacionTres {
+      margin: 11% 1% 20% 1%; }
+    .publicaciones .publicacionCuatro {
+      margin: 11% 1% 20% 1%; }
+    .publicaciones .publicacionCinco {
+      margin: 11% 1% 20% 1%; }
+    .publicaciones .publicacionSeis {
+      margin: 11% 1% 20% 1%; }
   .seccionUnificada {
     padding: 0; }
     .seccionUnificada .seccionUno {
