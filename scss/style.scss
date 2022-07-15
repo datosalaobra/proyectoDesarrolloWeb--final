@@ -36,7 +36,7 @@
     background-color: $color-background;
 }
 .contenedorNosotras{
-    height: 300vh;
+    height: 400vh;
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr;
     grid-template-rows: 0.3fr 2fr 1fr 0.3fr;
@@ -542,6 +542,7 @@ input[type = "checkbox"] {
 /*adaptación Tablet*/
 @media screen and (max-width:1024px){
     .contenedorUno{
+        background-size: cover;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 0.3fr 1fr 1fr 0.3fr;
         grid-template-areas: "header header header"
@@ -571,8 +572,8 @@ input[type = "checkbox"] {
         margin-top: 5%;
     }
     main p{
-        width: 100%;
-        margin-left: 1rem;
+        width: 70%;
+        margin-left: 18%;
         font-size: 2rem;
         margin-top: 0.3rem;
     }
@@ -602,8 +603,8 @@ input[type = "checkbox"] {
         display: none;
     }
     .formulario{
-        top: 38%;
-        left: 20%;
+        top: 30%;
+        left: 35%;
     }
     .video{
         display: none;
@@ -612,7 +613,7 @@ input[type = "checkbox"] {
 /* adaptación a mobile */
 @media screen and (max-width:600px){
     .contenedorUno{
-        height: 100%;
+        height: 120vh;
         background-size: cover;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 0.3fr 1fr 1fr 0.3fr;
@@ -629,7 +630,7 @@ input[type = "checkbox"] {
         background-color: $color-background;
     }
     .contenedorNosotras{
-        height: 380vh;
+        height: 480vh;
         gap: .5rem;
     }
     header{
@@ -730,7 +731,7 @@ input[type = "checkbox"] {
     }
     main .formulario {
         width: 15rem;
-        left: 15%;
+        left: 25%;
         top: 20%;
     }
     footer{
@@ -738,7 +739,7 @@ input[type = "checkbox"] {
     }
 }
 /* adaptación a mobile x-samll */
-@media screen and (max-width:375px){
+@media screen and (max-width:376px){
     .contenedorUno{
         height: 120vh;
         grid-template-columns: 0.5fr 1fr;
@@ -748,11 +749,12 @@ input[type = "checkbox"] {
         background-color: $color-background;
     }
     .contenedorNosotras{
-        height: 300vh;
+        height: 200vh;
     }
     .main{
         inline-size: 20rem;
     }
+    
     header nav ul li{
         margin-top: 1rem;
     }
@@ -760,26 +762,26 @@ input[type = "checkbox"] {
         font-size: 1rem;
     }
     .info{
-        margin-top: 5%;
+        margin-top: 3%;
         .quienesSomos{
             display: inline-block;
             h1{
                font-weight: bold;
-               font-size: 1rem;
+               font-size: .8rem;
                text-align: center; 
             }
             h2{
                font-weight: bold;
-               font-size: 1rem;
+               font-size: .8rem;
                text-align: center;
             }
             h3{
                font-weight: bold;
-               font-size: 1rem;
+               font-size: .8rem;
                text-align: center;
             }
             p {
-               font-size: .7rem;
+               font-size: .6rem;
                text-align: justify;
             }
         }
@@ -817,6 +819,18 @@ input[type = "checkbox"] {
             margin-top: 25%;
             margin-bottom: 20%;
             margin-left: 5%;
+        }
+    }
+    .seccionUnificada{
+        padding: 0;
+        .seccionUno{
+            margin-right: 20%;
+        }
+        .seccionDos{
+            margin-right: 20%;
+        }
+        .seccionTres{
+            margin-right: 20%;
         }
     }
     footer{
