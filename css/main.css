@@ -641,6 +641,32 @@ input[type]:checked ~ span.middle {
       .info .quienesSomos p {
         font-size: .7rem;
         text-align: justify; }
+  .publicaciones .publicacionUno, .publicaciones .publicacionDos, .publicaciones .publicacionTres, .publicaciones .publicacionCuatro, .publicaciones .publicacionCinco, .publicaciones .publicacionSeis {
+    margin: 1px; }
+  .publicaciones .publicacionUno {
+    margin-top: 25%;
+    margin-bottom: 20%;
+    margin-left: 5%; }
+  .publicaciones .publicacionDos {
+    margin-top: 25%;
+    margin-bottom: 20%;
+    margin-left: 5%; }
+  .publicaciones .publicacionTres {
+    margin-top: 25%;
+    margin-bottom: 20%;
+    margin-left: 5%; }
+  .publicaciones .publicacionCuatro {
+    margin-top: 25%;
+    margin-bottom: 20%;
+    margin-left: 5%; }
+  .publicaciones .publicacionCinco {
+    margin-top: 25%;
+    margin-bottom: 20%;
+    margin-left: 5%; }
+  .publicaciones .publicacionSeis {
+    margin-top: 25%;
+    margin-bottom: 20%;
+    margin-left: 5%; }
   footer {
     margin-top: 2rem;
     font-size: 0.5rem; }
