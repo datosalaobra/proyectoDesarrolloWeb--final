@@ -32,7 +32,7 @@
                         "seccionCuatro footer footer footer";
 }
 .contenedorDos{
-    height: 100%;
+    height: 250vh;
     background-color: $color-background;
 }
 .contenedorNosotras{
@@ -134,7 +134,7 @@ main{
 .publicaciones{
     %cards {
         display: inline-block;
-        margin: 5rem 3rem 0 5rem;
+        margin: 6rem 3rem 0 5rem;
         box-shadow: 4px 5px $color-text-dark;
         text-shadow: $color-text-dark 0.1em 0.1em 0.2em; 
         text-decoration: none;
@@ -476,6 +476,7 @@ footer{
     font-size: 0.9rem;
     font-weight: bold;
     text-align: center;
+    margin-top: 1rem;
 }
 /* animaciones*/
 @keyframes escalar{
@@ -897,7 +898,7 @@ input[type = "checkbox"] {
     .publicaciones{
         margin-top: 2rem;
         .publicacionUno{
-            margin: 11% 1% 20% 1%;
+            margin: 15% 1% 20% 1%;
         }
         .publicacionDos{
             margin: 11% 1% 20% 1%;
@@ -943,7 +944,7 @@ input[type = "checkbox"] {
     }
     footer{
         margin-top: 2rem;
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
     .info{
         margin-top: 20%;
