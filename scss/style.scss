@@ -134,7 +134,7 @@ main{
 .publicaciones{
     %cards {
         display: inline-block;
-        margin: 6rem 2rem;
+        margin: 5rem 3rem;
         box-shadow: 4px 5px $color-text-dark;
         text-shadow: $color-text-dark 0.1em 0.1em 0.2em; 
         text-decoration: none;
@@ -572,7 +572,8 @@ input[type = "checkbox"] {
     }
     .contenedorDos{
         display: grid;
-        height: 420vh;
+        width: 100%;
+        height: 100%;
         background-color: $color-background;
     }
     .contenedorNosotras{
@@ -706,7 +707,7 @@ input[type = "checkbox"] {
     }
     .contenedorDos{
         display: grid;
-        height: 520vh;
+        height: 100%;
         background-color: $color-background;
     }
     .contenedorNosotras{
