@@ -271,7 +271,7 @@ span a:hover {
 .formulario {
   position: fixed;
   width: 22rem;
-  top: 30%;
+  top: 20%;
   left: 35%;
   border: outset;
   border-top: 0.3rem solid #bb0a21;
@@ -280,6 +280,9 @@ span a:hover {
   padding: 0.3rem;
   margin: 0.625rem;
   opacity: 0.95; }
+
+.botonesFormulario {
+  padding-top: 1rem; }
 
 /*propiedades de la section*/
 .seccionVentas {

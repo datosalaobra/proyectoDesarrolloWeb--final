@@ -19,7 +19,9 @@
     <!-- link animaciones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- link a mi css -->
-    <link rel="stylesheet" href="../css/main.css">    
+    <link rel="stylesheet" href="../css/main.css">
+    <!--Archivos de javascript externos al html-->
+    <script src="../js/main.js"></script>  
     <title>MDT Propiedades | Contacto</title>
 </head>
 <body>
@@ -61,27 +63,27 @@
                     
                         <div>
                             <label for="nombre">
-                                Nombre
+                                Nombre:
                             </label>
-                            <input type="text" name="nombre" placeholder="Así te llamaremos">
+                            <input class="form-control" type="text" name="nombre" placeholder="Así te llamaremos">
                         </div>
                         <div>
                             <label for="telefono">
-                                Teléfono
+                                Teléfono:
                             </label>
-                            <input type="Telefono" name="Telefono" placeholder="Donde podamos hablarte">
+                            <input class="form-control" type="Telefono" name="Telefono" placeholder="Donde podamos hablarte">
                         </div>
                         <div>
                             <label for="mail">
-                                E-mail
+                                E-mail:
                             </label>
-                            <input type="email" name="mail" placeholder="Para más información">
+                            <input class="form-control" type="email" name="mail" placeholder="Para más información">
                         </div>
                         <div>
                             <label for="motivo">
                             ¿Que necesitas?
                             </label>
-                            <select name="motivo">
+                            <select class="form-control" name="motivo">
                             <option value="Alquilar">¡Quiero Vender!</option>
                             <option value="Comprar">¡Quiero Comprar!</option>
                             <option value="Vender">¡Quiero Alquilar!</option>
@@ -92,7 +94,7 @@
                             <label for="propiedad">
                                 Seleciona el tipo de propiedad que te interesa 
                             </label>
-                            <select name="propiedad">
+                            <select class="form-control" name="propiedad">
                                 <option value="Casa">Casa</option>
                                 <option value="Departamento">Departamento</option>
                                 <option value="PH">PH</option>
@@ -101,9 +103,9 @@
                             </select>
                         </div>
         
-                        <div>
-                            <input type="submit" value="Enviar">
-                            <input type="reset" value="Borrar">
+                        <div class="botonesFormulario">
+                            <button class="btn btn-outline-secondary" onclick="saludar()" type="button">Enviar</button>
+                            <button class="btn btn-outline-secondary" onclick="saludar()" type="button">Borrar</button>
                         </div>
                     
                     </fieldset>
