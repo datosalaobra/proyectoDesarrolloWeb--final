@@ -65,7 +65,7 @@
                             <label for="nombre">
                                 Nombre:
                             </label>
-                            <input class="form-control" type="text" name="nombre" placeholder="Así te llamaremos">
+                            <input class="form-control" type="text" name="nombreUsuario" placeholder="Así te llamaremos">
                         </div>
                         <div>
                             <label for="telefono">
@@ -104,8 +104,11 @@
                         </div>
         
                         <div class="botonesFormulario">
-                            <button class="btn btn-outline-secondary" onclick="saludar()" type="button">Enviar</button>
+                            <button class="btn btn-outline-secondary" onclick="estadoFormulario()" type="button">Enviar</button>
                             <button class="btn btn-outline-secondary" onclick="saludar()" type="button">Borrar</button>
+                        </div>
+                        <div>
+                            <label id="idAlert" for="Estado"></label>
                         </div>
                     
                     </fieldset>
